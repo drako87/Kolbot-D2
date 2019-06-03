@@ -1,0 +1,60 @@
+// SET VERSION for KOLBOT adapted by DRAKO87
+// Made 09/05/2019
+// Same set.nip made to work with kolbot 19.3.3.100
+
+// ***** SETS *****
+//-Aldur's Watchtower-
+//[Name] == Hunter'sGuise && [Quality] == Set // Aldur's Stony Gaze
+//[Name] == BattleBoots && [Quality] == Set // Aldur's Advance
+//[Name] == ShadowPlate && [Quality] == Set // Aldur's Deception
+//[Name] == JaggedStar && [Quality] == Set // Aldur's Rhythm
+
+//-Bul Kathos' Children-
+//[Name] == ColossusBlade && [Quality] == Set // Bul-Kathos' Sacred Charge
+//[Name] == MythicalSword && [Quality] == Set // Bul-Kathos' Tribal Guardian
+
+//Cow King's Leathers
+//[Name] == WarHat && [Quality] == Set // Cow King's Horns
+//[Name] == StuddedLeather && [Quality] == Set // Cow King's Hide
+//[Name] == HeavyBoots && [Quality] == Set # [Dexterity] == 20 && [ItemMagicBonus] == 25 // Cow King's Hooves
+
+//-Griswold's Legacy-
+//[Name] == OrnatePlate && [Quality] == Set // Griswold's Heart
+//[Name] == Corona && [Quality] == Set // Griswold's Valor
+//[Name] == Caduceus && [Quality] == Set // Griswold's Redemption
+//[Name] == VortexShield && [Quality] == Set // Griswold's Honor
+
+//-Immortal King-
+//[Name] == WarBelt && [Quality] == Set // Immortal King's Detail
+//[Name] == AvengerGuard && [Quality] == Set // Immortal King's Will
+//[Name] == OgreMaul && [Quality] == Set // Immortal King's Stone Crusher
+//[Name] == SacredArmor && [Quality] == Set // Immortal King's Soul Cage
+//[Name] == WarGauntlets && [Quality] == Set // Immortal King's Forge
+//[Name] == WarBoots && [Quality] == Set // Immortal King's Pillar
+
+//-M'avina's Battle Hymn-
+//[Name] == Diadem && [Quality] == Set // M'avina's True Sight
+//[Name] == GrandMatronBow && [Quality] == Set // M'avina's Caster
+//[Name] == KrakenShell && [Quality] == Set // M'avina's Embrace
+//[Name] == BattleGauntlets && [Quality] == Set // M'avina's Icy Clutch
+//[Name] == Sharkskin Belt && [Quality] == Set // M'avina's Tenet
+
+//-Natalya's Odium-
+//[Name] == GrimHelm && [Quality] == Set // Natalya's Totem
+//[Name] == ScissorsSuwayyah && [Quality] == Set // Natalya's Mark
+//[Name] == LoricatedMail && [Quality] == Set // Natalya's Shadow
+//[Name] == MeshBoots && [Quality] == Set // Natalya's Soul
+
+//-Tal Rasha's Wrappings-
+//[Name] == SwirlingCrystal && [Quality] == Set // Tal Rasha's Lidless Eye
+//[Name] == DeathMask && [Quality] == Set // Tal Rasha's Horadric Crest
+[Name] == LacqueredPlate && [Quality] == Set // Tal Rasha's Guardianship
+[Type] == amulet && [Quality] == Set # [SorceressSkills] == 2 // Tal Rasha's Adjucation
+[Name] == MeshBelt && [Quality] == Set # [ItemMagicBonus] == 15 // Tal Rasha's Fine-Spun Cloth
+
+//-Trang-Oul's Avatar-
+//[Name] == BoneVisage && [Quality] == Set // Trang-Oul's Guise
+//[Name] == ChaosArmor && [Quality] == Set // Trang-Oul's Scales
+//[Name] == CantorTrophy && [Quality] == Set // Trang-Oul's Wing
+//[Name] == TrollBelt && [Quality] == Set // Trang-Oul's Girth
+//[Name] == HeavyBracers && [Quality] == Set // Trang-Oul's Claws
