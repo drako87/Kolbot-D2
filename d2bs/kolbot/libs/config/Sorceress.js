@@ -260,30 +260,34 @@ function LoadConfig() {
 	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
 	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
 
-	Config.StashGold = 100000; // Minimum amount of gold to stash.
+	Config.StashGold = 300000; // Minimum amount of gold to stash.
 
 	/* Potion types for belt columns from left to right.
 	 * Rejuvenation potions must always be rightmost.
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "hp";
-	Config.BeltColumn[1] = "mp";
+	Config.BeltColumn[1] = "hp";
 	Config.BeltColumn[2] = "rv";
-	Config.BeltColumn[3] = "rv";
+	Config.BeltColumn[3] = "mp";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
 	 * Set rejuvenation columns to 0, because they can't be bought.
 	 */
 	Config.MinColumn[0] = 3;
 	Config.MinColumn[1] = 3;
-	Config.MinColumn[2] = 0;
-	Config.MinColumn[3] = 0;
+	Config.MinColumn[2] = 3;
+	Config.MinColumn[3] = 3;
 
 	// Pickit config. Default folder is kolbot/pickit.
 	Config.PickitFiles.push("kolton.nip");
 	Config.PickitFiles.push("LLD.nip");
-	Config.PickRange = 40; // Pick radius
-	Config.FastPick = false; // Check and pick items between attacks
+	Config.PickitFiles.push("gold.nip");
+	Config.PickitFiles.push("whites.nip");
+	Config.PickitFiles.push("set.nip");
+	Config.PickitFiles.push("crasoup.nip");
+	Config.PickRange = 50; // Pick radius
+	Config.FastPick = true; // Check and pick items between attacks
 
 	/* Advanced automule settings
 	 * Trigger - Having an item that is on the list will initiate muling. Useful if you want to mule something immediately upon finding.
