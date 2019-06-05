@@ -5,6 +5,13 @@
 // ** MISCELANEOUS **
 [Name] == Gold # [Gold] >= 5000
 
+//SCROLLS
+[Name] == ScrollofTownPortal 
+[Name] == ScrollofIdentify
+
+//CHEST KEY
+[Name] == Key # # [MaxQuantity] == 12
+
 // ** POTIONS **
 //[Name] == Rejuvenation Potion
 [Name] == FullRejuvenationPotion
