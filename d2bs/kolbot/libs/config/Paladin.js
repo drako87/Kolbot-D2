@@ -496,7 +496,7 @@ function LoadConfig() {
 	Config.AttackSkill[3] = 112; // Primary skill to others.
 	Config.AttackSkill[4] = 113; // Primary aura to others.
 	Config.AttackSkill[5] = 101; // Secondary skill if monster is immune to primary.
-	Config.AttackSkill[6] = 124; // Secondary aura.
+	Config.AttackSkill[6] = 113; // Secondary aura.
 
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = -1; // Low mana skill.
