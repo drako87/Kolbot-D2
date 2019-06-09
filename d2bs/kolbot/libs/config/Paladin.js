@@ -498,6 +498,8 @@ function LoadConfig() {
 	Config.AttackSkill[5] = 101; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = 113; // Secondary aura.
 
+	Config.Wave2Fix = true; //Wrecklessly use HolyBoly on Wave 2 of Baal
+	
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = -1; // Low mana skill.
 	Config.LowManaSkill[1] = -1; // Low mana aura.
