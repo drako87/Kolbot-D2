@@ -14,7 +14,7 @@ function LoadConfig() {
 	 */
 
 	// User addon script. Read the description in libs/bots/UserAddon.js
-	Scripts.UserAddon = true; // !!!YOU MUST SET THIS TO FALSE IF YOU WANT TO RUN BOSS/AREA SCRIPTS!!!
+	Scripts.UserAddon = false; // !!!YOU MUST SET THIS TO FALSE IF YOU WANT TO RUN BOSS/AREA SCRIPTS!!!
 
 	// Battle orders script - Use this for 2+ characters (for example BO barb + sorc)
 	Scripts.BattleOrders = false;
@@ -237,7 +237,7 @@ function LoadConfig() {
 	Config.UseMP = 30; // Drink a mana potion if mana is under designated percent.
 	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
 	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
-	Config.UseMercRejuv = 0; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
+	Config.UseMercRejuv = 25; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
@@ -312,7 +312,7 @@ function LoadConfig() {
 	Config.ItemInfoQuality = []; // The quality of sold items to log. See NTItemAlias.dbl for values. Example: Config.ItemInfoQuality = [6, 7, 8];
 
 	// Item identification settings
-	Config.CainID.Enable = false; // Identify items at Cain
+	Config.CainID.Enable = true; // Identify items at Cain
 	Config.CainID.MinGold = 2500000; // Minimum gold (stash + character) to have in order to use Cain.
 	Config.CainID.MinUnids = 3; // Minimum number of unid items in order to use Cain.
 	Config.FieldID = false; // Identify items in the field instead of going to town.
@@ -320,23 +320,23 @@ function LoadConfig() {
 	Config.DroppedItemsAnnounce.Quality = []; // Quality of item to announce. See NTItemAlias.dbl for values. Example: Config.DroppedItemsAnnounce.Quality = [6, 7, 8];
 
 	// Manager Item Log Screen
-	Config.LogKeys = false; // Log keys on item viewer
+	Config.LogKeys = true; // Log keys on item viewer
 	Config.LogOrgans = true; // Log organs on item viewer
-	Config.LogLowRunes = false; // Log low runes (El - Dol) on item viewer
-	Config.LogMiddleRunes = false; // Log middle runes (Hel - Mal) on item viewer
+	Config.LogLowRunes = true; // Log low runes (El - Dol) on item viewer
+	Config.LogMiddleRunes = true; // Log middle runes (Hel - Mal) on item viewer
 	Config.LogHighRunes = true; // Log high runes (Ist - Zod) on item viewer
-	Config.LogLowGems = false; // Log low gems (chipped, flawed, normal) on item viewer
-	Config.LogHighGems = false; // Log high gems (flawless, perfect) on item viewer
+	Config.LogLowGems = true; // Log low gems (chipped, flawed, normal) on item viewer
+	Config.LogHighGems = true; // Log high gems (flawless, perfect) on item viewer
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
 	Config.ShowCubingInfo = true; // Show cubing messages on console
 
 	// Repair settings
 	Config.CubeRepair = false; // Repair weapons with Ort and armor with Ral rune. Don't use it if you don't understand the risk of losing items.
-	Config.RepairPercent = 40; // Durability percent of any equipped item that will trigger repairs.
+	Config.RepairPercent = 50; // Durability percent of any equipped item that will trigger repairs.
 
 	// Gambling config
-	Config.Gamble = false;
-	Config.GambleGoldStart = 1000000;
+	Config.Gamble = true;
+	Config.GambleGoldStart = 2500000;
 	Config.GambleGoldStop = 500000;
 
 	// List of item names or classids for gambling. Check libs/NTItemAlias.dbl file for other item classids.
@@ -362,8 +362,11 @@ function LoadConfig() {
 
 	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 
+	//Config.Recipes.push([Recipe.Rune, "Ko Rune"]); // Upgrade Ko to Fal
+	//Config.Recipes.push([Recipe.Rune, "Fal Rune"]); // Upgrade Fal to Lem
+        //Config.Recipes.push([Recipe.Rune, "Lem Rune"]); // Upgrade Lem to Pul
 	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
-	//Config.Recipes.push([Recipe.Rune, "Um Rune"]); // Upgrade Um to Mal
+	//Config.Recipes.push([Recipe.Rune, "Um Rune"]);  // Upgrade Um to Mal
 	//Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
 	//Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
 	//Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
@@ -421,19 +424,19 @@ function LoadConfig() {
 	Config.PublicMode = 0; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
-	Config.Greetings = []; // Example: ["Hello, $name (level $level $class)"]
-	Config.DeathMessages = []; // Example: ["Watch out for that $killer, $name!"]
-	Config.Congratulations = []; // Example: ["Congrats on level $level, $name!"]
+	Config.Greetings = ["Hello, $name (level $level $class)"]; // Example: ["Hello, $name (level $level $class)"]
+	Config.DeathMessages = ["Watch out for that $killer, $name!"]; // Example: ["Watch out for that $killer, $name!"]
+	Config.Congratulations = ["Congrats on level $level, $name!"]; // Example: ["Congrats on level $level, $name!"]
 	Config.ShitList = false; // Blacklist hostile players so they don't get invited to party.
 	Config.UnpartyShitlisted = false; // Leave party if someone invited a blacklisted player.
 
 	// General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
-	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
+	Config.LastMessage = "Next game: $nextgame"; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 60; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
-	Config.OpenChests = false; // Open chests. Controls key buying.
+	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
@@ -508,8 +511,8 @@ function LoadConfig() {
 	};
 
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
-	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
-	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
+	Config.ClearType = 0; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
+	Config.TeleStomp = true; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
 
 	// Wereform setup. Make sure you read Templates/Attacks.txt for attack skill format.
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
