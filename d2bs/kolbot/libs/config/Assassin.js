@@ -441,7 +441,10 @@ function LoadConfig() {
 	Config.PacketShopping = false; // Use packets to shop. Improves shopping speed.
 	Config.TownCheck = false; // Go to town if out of potions
 	Config.LogExperience = false; // Print experience statistics in the manager.
-	Config.PingQuit = [{Ping: 0, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
+	
+	//First condition is that bot will quit if your ping will be higher than 600 for 10 seconds, second condition is that will quit when ping is higher then 1500.
+        //Rest of settings are self-explanatory
+	Config.PingQuit = [{Ping: 600, Duration: 10}, {Ping: 1500, Duration: 0}]; // Quit if ping is over the given value for over the given time period in seconds.
 
 	// Shrine Scanner - scan for shrines while moving.
 	// Put the shrine types in order of priority (from highest to lowest). For a list of types, see sdk/shrines.txt
