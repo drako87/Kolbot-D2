@@ -233,7 +233,7 @@ function LoadConfig() {
 
 	// Potion settings
 	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
-	Config.UseRejuvHP = 40;  // Drink a rejuvenation potion if life is under designated percent.
+	Config.UseRejuvHP = 45;  // Drink a rejuvenation potion if life is under designated percent.
 	Config.UseMP = 30; // Drink a mana potion if mana is under designated percent.
 	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
 	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
@@ -243,7 +243,7 @@ function LoadConfig() {
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
 	// Chicken settings
-	Config.LifeChicken = 35; // Exit game if life is less or equal to designated percent.
+	Config.LifeChicken = 30; // Exit game if life is less or equal to designated percent.
 	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
 	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
 	Config.TownHP = 0; // Go to town if life is under designated percent.
@@ -255,10 +255,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,0,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,0,0,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[0] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[1] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[2] = [0,0,0,0,0,0,0,0,0,0];
+	Config.Inventory[3] = [0,0,0,0,0,0,0,0,0,0];
 
 	Config.StashGold = 300000; // Minimum amount of gold to stash.
 
@@ -348,7 +348,7 @@ function LoadConfig() {
 	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
-	Config.Cubing = true; // Set to true to enable cubing.
+	Config.Cubing = false; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
@@ -362,12 +362,12 @@ function LoadConfig() {
 
 	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 
-	Config.Recipes.push([Recipe.Rune, "Ko Rune"]); // Upgrade Ko to Fal
-	Config.Recipes.push([Recipe.Rune, "Fal Rune"]); // Upgrade Fal to Lem
-        Config.Recipes.push([Recipe.Rune, "Lem Rune"]); // Upgrade Lem to Pul
-	Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
-	Config.Recipes.push([Recipe.Rune, "Um Rune"]);  // Upgrade Um to Mal
-	Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
+	//Config.Recipes.push([Recipe.Rune, "Ko Rune"]); // Upgrade Ko to Fal
+	//Config.Recipes.push([Recipe.Rune, "Fal Rune"]); // Upgrade Fal to Lem
+        //Config.Recipes.push([Recipe.Rune, "Lem Rune"]); // Upgrade Lem to Pul
+	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
+	//Config.Recipes.push([Recipe.Rune, "Um Rune"]);  // Upgrade Um to Mal
+	//Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
 	//Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
 	//Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
 
@@ -424,15 +424,15 @@ function LoadConfig() {
 	Config.PublicMode = 0; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
-	Config.Greetings = []; // Example: ["Hello, $name (level $level $class)"]
-	Config.DeathMessages = []; // Example: ["Watch out for that $killer, $name!"]
-	Config.Congratulations = []; // Example: ["Congrats on level $level, $name!"]
+	Config.Greetings = ["Hello, $name (level $level $class)"]; // Example: ["Hello, $name (level $level $class)"]
+	Config.DeathMessages = ["Watch out for that $killer, $name!"]; // Example: ["Watch out for that $killer, $name!"]
+	Config.Congratulations = ["Congrats on level $level, $name!"]; // Example: ["Congrats on level $level, $name!"]
 	Config.ShitList = false; // Blacklist hostile players so they don't get invited to party.
 	Config.UnpartyShitlisted = false; // Leave party if someone invited a blacklisted player.
 
 	// General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
-	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
+	Config.LastMessage = "Next game: $nextgame"; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 60; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
