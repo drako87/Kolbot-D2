@@ -225,11 +225,11 @@ function LoadConfig() {
 		Config.BaalAssistant.NextGameMessage = ["Next Game", "Next", "New Game"];	// Next Game message, this is a precautionary quit command, Reccomended setting up: Config.QuitList
 
 	// Town settings
-	Config.HealHP = 70; // Go to a healer if under designated percent of life.
+	Config.HealHP = 50; // Go to a healer if under designated percent of life.
 	Config.HealMP = 0; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = false; // Go to a healer if poisoned or cursed
 	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
-	Config.MercWatch = false; // Instant merc revive during battle.
+	Config.MercWatch = true; // Instant merc revive during battle.
 
 	// Potion settings
 	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
