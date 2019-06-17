@@ -174,10 +174,8 @@ var Pather = {
 		// Teleport without calling getPath if the spot is close enough
 		if (useTeleport && getDistance(me, x, y) <= this.teleDistance) {
 			//Misc.townCheck();
-
 			return this.teleportTo(x, y);
 		}
-
 		// Walk without calling getPath if the spot is close enough
 		if (!useTeleport && (getDistance(me, x, y) <= 5 || (getDistance(me, x, y) <= 25 && !CollMap.checkColl(me, {x: x, y: y}, 0x1)))) {
 			return this.walkTo(x, y);
@@ -900,6 +898,12 @@ ModeLoop:
 				if (me.area === 40 && npc && getDistance(me, npc) < 50) {
 					if (npc && npc.openMenu()) {
 						Misc.useMenu(0x0D37);
+
+						if (!Misc.poll(function () {
+							return me.area === 1;
+						}, 2000, 100)) {
+							throw new Error("Failed to go to act 1 using Warriv");
+						}
 					}
 				}
 
