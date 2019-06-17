@@ -244,12 +244,12 @@ var Skill = {
 	charges: [],
 
 	// Cast a skill on self, Unit or coords
-	cast: function (skillId, hand, x, y) {
+	cast: function (skillId, hand, x, y, item) {
 		if (me.inTown && !this.townSkill(skillId)) {
 			return false;
 		}
 
-		if (!me.getSkill(skillId, 1)) {
+		if (!item && !me.getSkill(skillId, 1)) {
 			return false;
 		}
 
@@ -257,8 +257,8 @@ var Skill = {
 			return false;
 		}
 
-		// No mana to cast
-		if (this.getManaCost(skillId) > me.mp) {
+		// Check mana cost, charged skills don't use mana
+		if (!item && this.getManaCost(skillId) > me.mp) {
 			// Maybe delay on ALL skills that we don't have enough mana for?
 			if (Config.AttackSkill.concat([42, 54]).concat(Config.LowManaSkill).indexOf(skillId) > -1) {
 				delay(300);
@@ -285,7 +285,7 @@ var Skill = {
 			y = me.y;
 		}
 
-		if (!this.setSkill(skillId, hand)) {
+		if (!this.setSkill(skillId, hand, item)) {
 			return false;
 		}
 
@@ -374,46 +374,24 @@ MainLoop:
 	},
 
 	// Put a skill on desired slot
-	setSkill: function (skillId, hand) {
+	setSkill: function (skillId, hand, item) {
 		// Check if the skill is already set
 		if (me.getSkill(hand === 0 ? 2 : 3) === skillId) {
 			return true;
 		}
 
-		if (!me.getSkill(skillId, 1)) {
+		if (!item && !me.getSkill(skillId, 1)) {
 			return false;
 		}
 
-		if (hand === undefined || hand === 3) {
+		// Charged skills must be cast from right hand
+		if (hand === undefined || hand === 3 || item) {
+			item && hand !== 0 && print('[ÿc9Warningÿc0] charged skills must be cast from right hand');
 			hand = 0;
 		}
 
-		var charge = this.getCharge(skillId);
-
-		if (!!charge) {
-			// charge.charges is a cached value from Attack.getCharges
-			/*if (charge.charges > 0 && me.setSkill(skillId, hand, charge.unit)) {
-				return true;
-			}*/
-
-			return false;
-		}
-
-		if (me.setSkill(skillId, hand)) {
+		if (me.setSkill(skillId, hand, item)) {
 			return true;
-		}
-
-		return false;
-	},
-
-	// Charged skill
-	getCharge: function (skillId) {
-		var i;
-
-		for (i = 0; i < this.charges.length; i += 1) {
-			if (this.charges[i].skill === skillId && me.getSkill(skillId, 0) === this.charges[i].level && me.getSkill(skillId, 0) === me.getSkill(skillId, 1)) {
-				return this.charges[i];
-			}
 		}
 
 		return false;
@@ -1777,34 +1755,27 @@ var Misc = {
 	/*fileAction: function (path, mode, msg) {
 		var i, file,
 			contents = "";
-
 MainLoop:
 		for (i = 0; i < 30; i += 1) {
 			try {
 				file = File.open(path, mode);
-
 				switch (mode) {
 				case 0: // read
 					contents = file.readLine();
-
 					break MainLoop;
 				case 1: // write
 				case 2: // append
 					file.write(msg);
-
 					break MainLoop;
 				}
 			} catch (e) {
-
 			} finally {
 				if (file) {
 					file.close();
 				}
 			}
-
 			delay(100);
 		}
-
 		return mode === 0 ? contents : true;
 	},*/
 
@@ -2482,12 +2453,9 @@ CursorLoop:
 };
 
 /*
-
 new PacketBuilder() - create new packet object
-
 Example (Spoof 'reassign player' packet to client):
 	new PacketBuilder().byte(0x15).byte(0).dword(me.gid).word(x).word(y).byte(1).get();
-
 Example (Spoof 'player move' packet to server):
 	new PacketBuilder().byte(0x3).word(x).word(y).send();
 */
