@@ -1,0 +1,186 @@
+// Charms VERSION for KOLBOT adapted by DRAKO87
+// Made 09/05/2019
+// Same charms.nip made to work with kolbot 19.3.3.100
+
+// ***** CHARM SECTION *****
+// SKILLERS (ALL)
+//[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [ItemAddPassiveAndMagicSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [ItemaddJavelinAndSpearSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddFireSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddLightningSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddColdSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddPaliCombatSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1
+//[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1
+
+// SKILLERS(VALUABLE)
+[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1 && [MaxHP] >= 20  
+[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [ItemAddBowAndCrossbowSkillTab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddpassiveandmagicskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddpassiveandmagicskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddpassiveandmagicskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddpassiveandmagicskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddpassiveandmagicskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddJavelinAndSpearSkillTab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddJavelinAndSpearSkillTab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddJavelinAndSpearSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddJavelinAndSpearSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddJavelinAndSpearSkillTab] == 1 && [Strength] == 6	 
+[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddPoisonAndBoneSkillTab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddnecromancersummoningskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddcursesskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddoffensiveaurasskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemadddefensiveaurasskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1 && [FHR] >= 7 
+[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddbarbcombatskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddmasteriesskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddWarCriesSkillTab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemadddruidsummoningskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddshapeshiftingskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddElementalSkillTab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddTrapsSkillTab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddshadowdisciplinesskilltab] == 1 && [Strength] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1 && [FHR] >= 7
+[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1 && [FRW] >= 5
+[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1 && [Dexterity] == 6
+[Name] == GrandCharm && [Quality] == magic # [itemaddmartialartsskilltab] == 1 && [Strength] == 6
+
+// RESIST GCS
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] == 15 && [LightResist] == 15 && [ColdResist] == 15 && [PoisonResist] == 15 //
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 12 && [LightResist] >= 12 && [ColdResist] >= 12 && [PoisonResist] >= 12 && [FRW] == 7
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 12 && [LightResist] >= 12 && [ColdResist] >= 12 && [PoisonResist] >= 12 && [FHR] == 12
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 12 && [LightResist] >= 12 && [ColdResist] >= 12 && [PoisonResist] >= 12 && [MaxHP] >= 30
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 14 && [LightResist] >= 14 && [ColdResist] >= 14 && [PoisonResist] >= 14 && [FRW] == 7
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 14 && [LightResist] >= 14 && [ColdResist] >= 14 && [PoisonResist] >= 14 && [FHR] == 12
+[Name] == GrandCharm && [Quality] == Magic # [FireResist] >= 14 && [LightResist] >= 14 && [ColdResist] >= 14 && [PoisonResist] >= 14 && [MaxHP] >= 30
+
+// [MaxDamage] GCS
+[Name] == GrandCharm && [Quality] == magic # [MaxDamage] >= 9 && [MaxHP] >= 30
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] >= 9 && [ToHit] >= 50
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] >= 9 && [ToHit] >= 50 && [MaxHP] >= 20
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] == 10 && [MaxHP] >= 25
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] >= 9 && [FHR] == 12
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] >= 9 && [FRW] == 7
+[Name] == GrandCharm && [Quality] == Magic # [MaxDamage] >= 9 && [ToHit] >= 20 && [FHR] == 12
+
+// LIFE/MANA GC
+[Name] == GrandCharm && [Quality] == Magic # [MaxHP] >= 40 && [Mana] >= 35
+[Name] == GrandCharm && [Quality] == Magic # [ItemGoldBonus] == 40
+
+// RESIST LCS
+[Name] == LargeCharm && [Quality] == Magic # [FireResist] == 8 && [LightResist] == 8 && [ColdResist] == 8 && [PoisonResist] == 8
+[Name] == LargeCharm && [Quality] == Magic # [FireResist] >= 5 && [LightResist] >= 5 && [ColdResist] >= 5 && [PoisonResist] >= 5 && [MaxHP] >= 25
+[Name] == LargeCharm && [Quality] == Magic # [FireResist] >= 7 && [LightResist] >= 7 && [ColdResist] >= 7 && [PoisonResist] >= 7 && [MaxHP] >= 25
+[Name] == LargeCharm && [Quality] == Magic # [FireResist] == 8 && [LightResist] == 8 && [ColdResist] == 8 && [PoisonResist] == 8 && [MaxHP] >= 25
+[Name] == LargeCharm && [Quality] == Magic # [FireResist] >= 8 && [LightResist] >= 8 && [ColdResist] >= 8 && [PoisonResist] >= 8 && [FHR] == 8 
+
+// [MaxDamage] LCS
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] >= 5 && [MaxHP] >= 30
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] == 6 && [MaxHP] >= 25
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] >= 5 && [FHR] == 8
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] == 6 && [FHR] == 8
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] >= 5 && [ToHit] >= 25 && [MaxHP] >= 20
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] >= 5 && [ToHit] >= 25 && [FHR] == 8
+[Name] == LargeCharm && [Quality] == Magic # [MaxDamage] >= 5 && [ToHit] >= 25 && [FRW] == 5
+
+// MISC LIFE/STATS SCS
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] == 20
+[Name] == SmallCharm && [Quality] == magic # [Strength] == 7 // +7 % mf small charm
+[Name] == SmallCharm && [Quality] == Magic # [ItemMagicBonus] >= 7
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] >= 15 && [FRW] == 3 
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] >= 15 && [FHR] == 5 
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] >= 17 && [FRW] == 3
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] >= 17 && [FHR] == 5
+[Name] == SmallCharm && [Quality] == magic # [MaxHP] >= 14 && 9 >= 12
+//[Name] == SmallCharm && [Quality] == Magic # [ItemGoldBonus] == 10
+
+// RESIST SCS
+[Name] == SmallCharm && [Quality] == magic # [FireResist] == 5 && [LightResist] == 5 && [ColdResist] == 5 && [PoisonResist] == 5 
+[Name] == SmallCharm && [Quality] == magic # [FireResist] >= 3 && [LightResist] >= 3 && [ColdResist] >= 3 && [PoisonResist] >= 3 && [MaxHP] >= 10
+[Name] == SmallCharm && [Quality] == magic # [FireResist] >= 3 && [LightResist] >= 3 && [ColdResist] >= 3 && [PoisonResist] >= 3 && [FRW] == 3
+[Name] == SmallCharm && [Quality] == magic # [FireResist] >= 3 && [LightResist] >= 3 && [ColdResist] >= 3 && [PoisonResist] >= 3 && [FHR] == 5
+[Name] == SmallCharm && [Quality] == magic # [FireResist] >= 3 && [LightResist] >= 3 && [ColdResist] >= 3 && [PoisonResist] >= 3 &&  80 >= 5
+[Name] == SmallCharm && [Quality] == magic # [FireResist] >= 3 && [LightResist] >= 3 && [ColdResist] >= 3 && [PoisonResist] >= 3 && [Strength] == 2 
+[Name] == SmallCharm && [Quality] == magic # [FireResist] == 11
+[Name] == SmallCharm && [Quality] == magic # [LightResist] == 11
+[Name] == SmallCharm && [Quality] == magic # [ColdResist] == 11
+[Name] == SmallCharm && [Quality] == magic # [PoisonResist] == 11
+
+//[MaxDamage] SCS
+[Name] == SmallCharm && [Quality] == magic # [MaxDamage] == 3 && [ToHit] == 20
+[Name] == SmallCharm && [Quality] == Magic # [MaxDamage] >= 3 && [ToHit] >= 10 && [FHR] == 5
+[Name] == SmallCharm && [Quality] == Magic # [MaxDamage] >= 3 && [ToHit] >= 10 && [MaxHP] >= 10
+[Name] == SmallCharm && [Quality] == Magic # [MaxDamage] >= 3 && [ToHit] >= 10 && [FRW] == 5
+
+// POISON SCS
+[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 205 && ([maxhp] >= 20 || [frw] == 3)
+[name] == smallcharm && [quality] == magic # [poisonmaxdam] == 291 || [poisonmaxdam] == 338 || [poisonmaxdam] == 351 || [poisonmaxdam] == 385 // 313, 330, 377, 451
+//[Name] == SmallCharm && [Quality] == Magic # [Strength] == 2

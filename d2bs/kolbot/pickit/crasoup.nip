@@ -1,0 +1,174 @@
+// CRASOUP VERSION for KOLBOT adapted by DRAKO87
+// Made 09/05/2019
+// Same crasoup.nip made to work with kolbot 19.3.3.100
+
+// **AMULETS**
+[name] == amulet && [quality] == magic # [paladinskills] == 1 && [maxhp] == 80
+[name] == amulet && [quality] == magic # [palicombatskilltab]+[fireskilltab]+[poisonandboneskilltab]+[trapsskilltab]+[shapeshiftingskilltab] == 2 && ([maxhp] == 80 || [hpregen] == 15)
+[type] == amulet && [quality] == rare # [poisonandboneskilltab]+[fireskilltab]+[trapsskilltab]+[palicombatskilltab]+[coldskilltab]+[lightningskilltab]+[elementalskilltab] == 2 && [fcr] == 10 && [maxhp]+[maxmana] >= 50 && [itemlevelreq] <= 30
+[type] == amulet && [quality] == rare # [amazonskills]+[barbarianskills] == 1 && [maxhp] >= 40 && ([hpregen] >= 6 || [maxmana] >= 60) && [itemlevelreq] <= 30
+[type] == amulet && [quality] == rare # [poisonandboneskilltab]+[fireskilltab]+[coldskilltab]+[palicombatskilltab] == 1 && [fcr] == 10 && [maxhp]+[maxmana] >= 40 && [hpregen] >= 5 && [itemlevelreq] <= 18
+[type] == amulet && [quality] == rare # [maxhp]+[maxmana] >= 60 && [hpregen] >= 5 && [itemlevelreq] <= 18
+[type] == amulet && [quality] == rare # [strength]+[dexterity]+[hpregen] >= 10 && [itemlevelreq] <= 9
+[type] == amulet && [quality] == rare # [hpregen] >= 5 && [strength]+[dexterity] >= 5 && [itemlevelreq] <= 9
+
+[name] == amulet && [quality] == rare # [sorceressskills] == 2 && [fcr] == 10 && ([maxhp] >= 35 || [maxmana] >= 80) && ([strength]+[dexterity] >= 15 || [fireresist] >= 10 && [coldresist] >= 10)
+[name] == amulet && [quality] == rare # [necromancerskills]+[paladinskills]+[assassinskills] == 2 && [fcr] == 10 && [maxhp] >= 35 && ([strength]+[dexterity] >= 15 || [fireresist] >= 10 && [coldresist] >= 10)
+[name] == amulet && [quality] == rare # [amazonskills]+[paladinskills]+[druidskills]+[assassinskills]+[barbarianskills] == 2 && [strength]+[dexterity] >= 15 && [maxhp] >= 35 && [fireresist] >= 10 && [coldresist] >= 10
+[name] == amulet && ([quality] == rare || [quality] == magic) # [barbarianskills] == 2 && [itemgoldbonus] == 80
+
+[name] == amulet && [quality] == magic # [itemmagicbonus] == 50
+[name] == amulet && [quality] == magic # [warcriesskilltab] == 3 && ([itemgoldbonus] == 80 || [maxhp] == 100)
+[name] == amulet && [quality] == magic # ([shadowdisciplinesskilltab] == 3 || [poisonandboneskilltab] == 3 || [palicombatskilltab] == 3) && [maxhp] == 100
+[name] == amulet && [quality] == magic # ([coldskilltab] == 3 || [lightningskilltab] == 3 || [fireskilltab] == 3) && [maxhp] == 100
+[type] == amulet && [quality] == magic # ([paladinskills] == 2 || [palicombatskilltab] == 3 || [sorceressskills] == 2 || [lightningskilltab] == 3) && [normaldamagereduction] == 25
+
+// **RINGS**
+[type] == ring && [quality] == rare # [fcr] >= 10 && [maxmana] >= 60 && ([strength] >= 8 || [dexterity] >= 8 || [hpregen] >= 5) && [itemlevelreq] <= 30
+[type] == ring && [quality] == rare # [tohit] >= 100 && [strength]+[dexterity] >= 9 && [maxmana] >= 60 && ([hpregen] >= 5 || [mindamage] >= 3 || [maxdamage] >= 5 || [maxhp] >= 15) && [itemlevelreq] <= 30
+[type] == ring && [quality] == rare # [fcr] == 10 && [strength] >= 6 && [dexterity] >= 6 && [maxmana] >= 60 && [itemlevelreq] == 30
+[type] == ring && [quality] == rare # ([dexterity] >= 4 || [strength] >= 4) && ([tohit] >= 70 || [mindamage] == 3) && [maxmana] >= 30 && [hpregen] >= 4 && [itemlevelreq] <= 18
+[type] == ring && [quality] == rare # [fcr] == 10 && [strength] >= 4 && [hpregen] >= 4 && [maxmana] >= 30 && [itemlevelreq] <= 18
+[type] == ring && [quality] == rare # [tohit] >= 60 && [hpregen]+([strength]+[dexterity]+[maxdamage]+[maxmana]/5)*2 >= 7 && [itemlevelreq] <= 9
+
+[name] == ring && [quality] == rare # [fcr] == 10 && [tohit] >= 90 && [maxhp] >= 30 && [maxmana] >= 60 //bvc ring
+[name] == ring && [quality] == rare # [tohit] >= 100 && [strength]+[dexterity] >= 30 //dual stat melee
+[type] == ring && [quality] == rare # [fcr] == 10 && ([strength] >= 20 || [strength]+[dexterity] >= 15 && ([maxhp] >= 30 || [maxmana] >= 60) || [maxhp] >= 30 && [maxmana] >= 60)
+[name] == ring && [quality] == rare # [fcr] == 10 && [dexterity] >= 12 && [maxhp] >= 30 && ([fireresist] >= 20 || [lightresist] >= 20 || [fireresist] >= 9 && [lightresist] >= 9) //hdin ring
+
+//[name] == ring && [quality] == magic # [fcr] == 10 && [fireresist] >= 15 && [coldresist] >= 15
+//[name] == ring && [quality] == magic # [fcr] == 10 && [maxmana] >= 100
+//[name] == ring && [quality] == magic # [itemmagicbonus] == 40
+
+// **ARMOR**
+[type] == armor && [quality] == rare && [flag] == ethereal # [enhanceddefense] >= 150 && [sockets] == 2 && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
+[type] == armor && [quality] == magic && [class] == elite && [flag] != ethereal # [sockets] == 4 && ([fhr] == 24 || [maxhp] >= 100)
+([name] == gothicplate || [name] == ancientarmor) && [quality] == magic && [flag] != ethereal # [sockets] == 4 && ([fhr] == 24 || [maxhp] >= 100)
+
+// **SHIELDS**
+[name] == monarch && [quality] == magic && [flag] != ethereal # [sockets] == 4 && [fbr] == 30 // jmod
+[name] == monarch && [quality] == magic && [flag] != ethereal # [sockets] == 4 && [fhr] == 17 // jmoe
+[name] == monarch && [quality] == magic && [flag] != ethereal # [sockets] == 4 && [maxhp] >= 41 // jmoc
+[name] == monarch && [quality] == magic && [flag] != ethereal # [sockets] == 4 && [itemreqpercent] == -30 // jmos
+
+// **CRAFTING**
+//[Type] == Amulet && [Quality] == Magic # [Ilvl] >= 1
+//[Name] == LightBelt && [Quality] == Magic # [Ilvl] >= 94
+//[Name] == SharkskinBelt && [Quality] == magic # [Ilvl]>= 94
+//[Name] == VampirefangBelt && [Quality] == Magic # [Ilvl] >= 94
+//[Name] == ChainGloves && [Quality] == Magic # [Ilvl] >= 90
+//[Name] == HeavyBracers && [Quality] == Magic # [Ilvl] >=90
+//[Name] == Vambraces && [Quality] == Magic # [Ilvl] >= 90
+//[Type] == Jewel && [Quality] == Magic
+//[Type] == Jewel && [Quality] == Rare
+//[Name] == PerfectAmethyst
+
+//HITPOWER & BLOOD GLOVES
+[Type] == Gloves && [Quality] == Crafted # [IAS] == 20 && [Dexterity] >= 1 && [Strength] >= 1 && ([ItemCrushingBlow] >= 5 || [ItemKnockBack] >= 1)
+
+//BLOOD RINGS
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength] >= 1 && [ItemMagicBonus] >= 25
+[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 1 && [MaxHP] >= 35
+[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 1 && [Dexterity] >= 10 && [MaxHP] >= 25
+[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && ([Dexterity] >= 10 || [Strength] >= 15) && [MaxHP] >= 25
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && [HPRegen] >= 7
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && ([ColdResist] >= 15 || [FireResist] >= 15 || [LightResist] >= 15)
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && (([ColdResist]+[FireResist] >= 15) || ([ColdResist]+[LightResist] >= 15) || ([FireResist]+[LightResist] >= 15))
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && [Mana] >= 50
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && [Strength]+[Dexterity] >= 20
+[Type] == Ring && [Quality] == Crafted # [Strength] >= 1 && [FCR] >= 10 && [MaxHP] >= 35 && [HPRegen] >= 7
+[Type] == Ring && [Quality] == Crafted # [Strength] >= 1 && [FCR] >= 10 && [MaxHP] >= 35 && ([ColdResist] >= 15 || [FireResist] >= 15 || [LightResist] >= 15)
+[Type] == Ring && [Quality] == Crafted # [Strength] >= 1 && [FCR] >= 10 && [MaxHP] >= 25 && (([ColdResist]+[FireResist] >= 20) || ([ColdResist]+[LightResist] >= 20) || ([FireResist]+[LightResist] >= 20))
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Dexterity]+[Strength] >= 30 && (([ColdResist]+[FireResist] >= 15) || ([ColdResist]+[LightResist] >= 15) || ([FireResist]+[LightResist] >= 15))
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Dexterity]+[Strength] >= 30 && ([ColdResist] >= 15 || [FireResist] >= 15 || [LightResist] >= 15)
+[Type] == Ring && [Quality] == Crafted # [Dexterity]+[Strength] >= 30 && [MaxHP] >= 15
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Dexterity]+[Strength] >= 30 && [Mana] >= 50
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength]+[Dexterity] >= 30 && [ManaLeech]+[LifeLeech] >= 6
+[Type] == Ring && [Quality] == Crafted # ([Dexterity] >= 15 || [Strength] >= 20) && [MaxHP] >= 35
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && ([Dexterity] >= 15 || [Strength] >= 20) && [HPRegen] >= 7
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && ([Dexterity] >= 15 || [Strength] >= 17) && [ManaLeech]+[LifeLeech] >= 10
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength] >= 5 && [ManaLeech]+[LifeLeech] >= 10 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Ring && [Quality] == Crafted # [Strength] >= 1 && [ManaLeech]+[LifeLeech] >= 10 && [MaxHP] >= 35
+
+//BLOOD BELTS
+[Type] == Belt && [Quality] == Crafted # [ItemOpenWounds] >= 5 && [MaxHP] >= 10 && ([FHR] >= 24 || [Strength] >= 15)
+
+//CASTER BELTS
+[Type] == Belt && [Quality] == Crafted # [FCR] >= 10 && (([FHR] >= 24 && [MaxHP] >= 20) || ([FHR] >= 24 && [Strength] >= 10) || ([MaxHP] >= 20 && [Strength] >= 10))
+[Type] == Belt && [Quality] == Crafted # [FCR] >= 10 && ([FHR] >= 24 || [MaxHP] >= 30 || [Strength] >= 20)
+[Type] == Belt && [Quality] == Crafted # [FCR] >= 5 && (([FHR] >= 24 && [MaxHP] >= 30) || ([FHR] >= 24 && [Strength] >= 20) || ([MaxHP] >= 30 && [Strength] >= 20))
+
+//CASTER AMULETS +2 CLASS
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [Dexterity]+[Strength] >= 20 && [MaxHP] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [Dexterity]+[Strength] >= 20 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [Dexterity]+[Strength] >= 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 40
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && [MaxHP] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 40
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] > 10
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && [Dexterity]+[Strength] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && [MaxHP] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 32
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && [MaxHP] >= 25 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && [MaxHP] >= 25 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 32
+[Type] == Amulet && [Quality] == Crafted # [ItemAddClassSkills] == 2 && [FCR] >= 5 && [MaxHP] >= 40
+
+//CASTER AMULETS +2 TREE
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [Dexterity]+[Strength] >= 20 && [MaxHP] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [Dexterity]+[Strength] >= 20 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [Dexterity]+[Strength] >= 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 40
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && [MaxHP] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && ([Dexterity] >= 20 || [Strength] >= 20) && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 40
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] > 10
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && [Dexterity]+[Strength] >= 20
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && [MaxHP] >= 15
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && ([Dexterity] >= 10 || [Strength] >= 10) && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 32
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && [MaxHP] >= 25 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && [MaxHP] >= 25 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 32
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 5 && [MaxHP] >= 40
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 10 && [ItemGoldBonus] >= 75
+[Type] == Amulet && [Quality] == Crafted # [ItemAddSkillTab] == 2 && [FCR] >= 10 && [ItemMagicBonus] >= 25
+
+//BLOOD BOOTS
+[Type] == Boots && [Quality] == Crafted # (([HPRegen] >= 5 && [MaxHP] >= 20) || ([HPRegen] >= 10 && [MaxHP] >= 10)) && ([FRW] >= 20 || [FHR] >= 10) && (([ColdResist]+[FireResist] >= 50) || ([ColdResist]+[LightResist] >= 50) || ([FireResist]+[LightResist] >= 50) || [Dexterity] >= 7)
+[Type] == Boots && [Quality] == Crafted # (([HPRegen] >= 5 && [MaxHP] >= 20) || ([HPRegen] >= 10 && [MaxHP] >= 10)) && ([FRW] >= 20 || [FHR] >= 10) && (([ColdResist]+[FireResist]+[LightResist] >= 60) || ([ColdResist]+[LightResist]+[PoisonResist] >= 70) || ([FireResist]+[LightResist]+[PoisonResist] >= 70))
+
+//CASTER BOOTS
+[Type] == Boots && [Quality] == Crafted # [ItemMaxManaPercent] >= 2 && [ManaRecovery] >= 4 && [Mana] >= 21 && ([FRW] >= 20 || [FHR] >= 10) && ([ColdResist] >= 10 || [FireResist] >= 10 || [LightResist] >= 10 || [Dexterity] >= 5)
+[Type] == Boots && [Quality] == Crafted # [ItemMaxManaPercent] >= 2 && [ManaRecovery] >= 4 && [Mana] >= 41 && ([FRW] >= 20 || [FHR] >= 10)
+
+//BLOOD HELMS
+[Type] == Helm && [Quality] == Crafted # [ItemDeadlyStrike] >= 5 && [MaxHP] >= 10 && [Sockets] >= 2 && ([ItemToHitPercentPerLevel] >= 1 || ([PaliCombatSkillTab] >= 1 || [BarbCombatSkillTab] >= 1))
+
+// **SOCKETING**
+//*Tal + Thul + PerfectTopaz - Socketed Body Armor*
+//*Ral + Amn + PerfectAmethyst - Socketed Weapon*
+//*Ral + Thul + PerfectSapphire - Socketed Helm*
+//*Tal + Amn + PerfectRuby - Socketed Shield*
+//[Name] == TalRune
+//[Name] == RalRune
+//[Name] == ThulRune
+//[Name] == AmnRune
+//[Name] == PerfectAmethyst
+//[Name] == PerfectRuby
+//[Name] == PerfectSapphire
+//[Name] == PerfectTopaz
+
+// **UPGRADING**
+//Ral + Sol + PerfectEmerald == Normal - Exceptional Weapon
+//Tal + Shael + PerfectDiamond == Normal - Exceptional Armor
+//Lum + Pul + PerfectEmerald == Exceptional - Elite Weapon
+//Ko + Lem + PerfectDiamond - Exceptional - Elite Armor
+//[Name] == TalRune
+//[Name] == RalRune
+//[Name] == SolRune
+//[Name] == ShaelRune
+//[Name] == KoRune
+//[Name] == LumRune
+//[Name] == LemRune
+//[Name] == PulRune
+//[Name] == PerfectDiamond
+//[Name] == PerfectEmerald

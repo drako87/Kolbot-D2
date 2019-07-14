@@ -1,0 +1,112 @@
+// GOLD VERSION for KOLBOT adapted by DRAKO87
+// Made 09/05/2019
+// Same gold.nip made to work with kolbot 19.3.3.100
+
+// ** MISCELANEOUS **
+[Name] == Gold # [Gold] >= 5000
+
+// ** SCROLLS **
+[Name] == ScrollofTownPortal 
+[Name] == ScrollofIdentify
+
+// ** CHEST KEY **
+[Name] == Key # # [MaxQuantity] == 12
+
+// ** POTIONS **
+//[Name] == Rejuvenation Potion
+[Name] == FullRejuvenationPotion
+//[Name] == GreaterHealingPotion
+[Name] == SuperHealingPotion
+//[Name] == GreaterManaPotion
+[Name] == SuperManaPotion
+
+// ** KEYS **
+[name] == keyofhate # # [maxquantity] == 3
+[name] == keyofterror # # [maxquantity] == 3
+[name] == keyofdestruction # # [maxquantity] == 3
+
+// ** ORGANS **
+[name] == diablo'shorn
+[name] == mephisto'sbrain
+[name] == baal'seye
+
+// ** Essences **
+//[Name] == TwistedEssenceOfSuffering
+//[Name] == ChargedEssenseOfHatred
+//[Name] == BurningEssenceOfTerror
+//[Name] == FesteringEssenceOfDestruction
+
+// ** Token **
+[Name] == TokenOfAbsolution
+
+// ** GEMS SECTION **
+//[Name] == ChippedTopaz
+//[Name] == ChippedAmethyst
+//[Name] == ChippedSapphire
+//[Name] == ChippedRuby
+//[Name] == ChippedEmerald
+//[Name] == ChippedDiamond
+//[Name] == ChippedSkull
+//[Name] == FlawedTopaz
+//[Name] == FlawedAmethyst
+//[Name] == FlawedSapphire
+//[Name] == FlawedRuby
+//[Name] == FlawedEmerald
+//[Name] == FlawedDiamond
+//[Name] == FlawedSkull
+//[Name] == Topaz
+//[Name] == Amethyst
+//[Name] == Sapphire
+//[Name] == Ruby
+//[Name] == Emerald
+//[Name] == Diamond
+//[Name] == Skull
+//[Name] == FlawlessTopaz
+//[Name] == FlawlessAmethyst
+//[Name] == FlawlessSapphire
+//[Name] == FlawlessRuby
+//[Name] == FlawlessEmerald
+//[Name] == FlawlessDiamond
+//[Name] == FlawlessSkull
+[Name] == PerfectTopaz
+[Name] == PerfectAmethyst
+[Name] == PerfectSapphire
+[Name] == PerfectRuby
+[Name] == PerfectEmerald
+[Name] == PerfectDiamond
+[Name] == PerfectSkull
+
+// ** RUNES SECTION **
+//[name] == elrune # # [MaxQuantity] == 1
+//[name] == eldrune # # [MaxQuantity] == 1
+//[name] == tirrune # # [MaxQuantity] == 2
+//[name] == nefrune # # [MaxQuantity] == 2
+//[name] == ethrune # # [MaxQuantity] == 1
+//[name] == ithrune # # [MaxQuantity] == 1
+//[name] == talrune # # [MaxQuantity] == 2
+//[name] == ralrune # # [MaxQuantity] == 2
+//[name] == ortrune # # [MaxQuantity] == 2
+//[name] == thulrune # # [MaxQuantity] == 2
+//[name] == amnrune # # [MaxQuantity] == 1
+//[name] == solrune # # [MaxQuantity] == 2
+//[name] == shaelrune # # [MaxQuantity] == 1
+//[name] == dolrune # # [MaxQuantity] == 1
+//[name] == helrune # # [MaxQuantity] == 2
+//[name] == iorune # # [MaxQuantity] == 1
+//[name] == lumrune # # [MaxQuantity] == 1
+//[Name] == KoRune # # [MaxQuantity] == 2
+//[Name] == FalRune # # [MaxQuantity] == 2
+//[Name] == LemRune # # [MaxQuantity] == 3
+[Name] == PulRune
+[Name] == UmRune
+[Name] == MalRune
+[Name] == IstRune
+[Name] == GulRune
+[Name] == VexRune
+[Name] == OhmRune
+[Name] == LoRune
+[Name] == SurRune
+[Name] == BerRune
+[Name] == JahRune
+[Name] == ChamRune
+[Name] == ZodRune
