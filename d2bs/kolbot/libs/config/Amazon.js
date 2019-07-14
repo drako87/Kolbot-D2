@@ -286,6 +286,8 @@ function LoadConfig() {
 	Config.PickitFiles.push("whites.nip");
 	Config.PickitFiles.push("set.nip");
 	Config.PickitFiles.push("crasoup.nip");
+	Config.PickitFiles.push("charms.nip");
+	Config.PickitFiles.push("shop.nip");
 	Config.PickRange = 50; // Pick radius
 	Config.FastPick = true; // Check and pick items between attacks
 
