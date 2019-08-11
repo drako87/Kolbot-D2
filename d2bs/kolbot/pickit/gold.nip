@@ -1,9 +1,9 @@
 // GOLD VERSION for KOLBOT adapted by DRAKO87
-// Made 09/05/2019
+// Made 11/08/2019
 // Same gold.nip made to work with kolbot 19.3.3.100
 
 // ** MISCELANEOUS **
-[Name] == Gold # [Gold] >= 5000
+[Name] == Gold # [Gold] >= 500
 
 // ** SCROLLS **
 [Name] == ScrollofTownPortal 
@@ -21,8 +21,8 @@
 [Name] == SuperManaPotion
 
 // ** KEYS **
-[name] == keyofhate # # [maxquantity] == 3
-[name] == keyofterror # # [maxquantity] == 3
+//[name] == keyofhate # # [maxquantity] == 3
+//[name] == keyofterror # # [maxquantity] == 3
 [name] == keyofdestruction # # [maxquantity] == 3
 
 // ** ORGANS **
@@ -79,24 +79,24 @@
 // ** RUNES SECTION **
 //[name] == elrune # # [MaxQuantity] == 1
 //[name] == eldrune # # [MaxQuantity] == 1
-//[name] == tirrune # # [MaxQuantity] == 2
+//[name] == tirrune # # [MaxQuantity] == 1
 //[name] == nefrune # # [MaxQuantity] == 2
 //[name] == ethrune # # [MaxQuantity] == 1
 //[name] == ithrune # # [MaxQuantity] == 1
-//[name] == talrune # # [MaxQuantity] == 2
-//[name] == ralrune # # [MaxQuantity] == 2
-//[name] == ortrune # # [MaxQuantity] == 2
-//[name] == thulrune # # [MaxQuantity] == 2
-//[name] == amnrune # # [MaxQuantity] == 1
+[name] == talrune # # [MaxQuantity] == 1
+//[name] == ralrune # # [MaxQuantity] == 1
+[name] == ortrune # # [MaxQuantity] == 1
+[name] == thulrune # # [MaxQuantity] == 1
+[name] == amnrune # # [MaxQuantity] == 1
 //[name] == solrune # # [MaxQuantity] == 2
 //[name] == shaelrune # # [MaxQuantity] == 1
 //[name] == dolrune # # [MaxQuantity] == 1
-//[name] == helrune # # [MaxQuantity] == 2
+[name] == helrune # # [MaxQuantity] == 4
 //[name] == iorune # # [MaxQuantity] == 1
 //[name] == lumrune # # [MaxQuantity] == 1
-//[Name] == KoRune # # [MaxQuantity] == 2
-//[Name] == FalRune # # [MaxQuantity] == 2
-//[Name] == LemRune # # [MaxQuantity] == 3
+[Name] == KoRune # # [MaxQuantity] == 3
+[Name] == FalRune # # [MaxQuantity] == 3
+[Name] == LemRune # # [MaxQuantity] == 3
 [Name] == PulRune
 [Name] == UmRune
 [Name] == MalRune
