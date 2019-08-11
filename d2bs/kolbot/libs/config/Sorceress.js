@@ -608,7 +608,7 @@ function LoadConfig() {
 
 	// Class specific config
 	Config.CastStatic = 60; // Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = ["Andariel","Duriel","Mephisto","Diablo","Baal"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	Config.StaticList = ["Pindleskin","Shenk The Overseer","Ismail Vilehand","Stormtree","The Countess","Radament","Griswold","Andariel","Duriel","Mephisto","Diablo","Baal","Infector of Souls","Lord De Seis","Achmel The Cursed","Bartuc The Bloody","Lister The Tormentor","Ventar the Unholy","Nihlathak"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
