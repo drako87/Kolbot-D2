@@ -1,5 +1,5 @@
 // KOLTON VERSION for KOLBOT adapted by DRAKO87
-// Made 09/05/2019
+// Made 11/08/2019
 // Same kolton.nip made to work with kolbot 19.3.3.100
 
 // ***** UNIDENTIFIED UNIQUES SECTION *****
@@ -10,7 +10,7 @@
 //[Type] == amulet && [Quality] == Unique 
 
 //UNIQUE JEWELS
-[Name] == jewel && [Quality] == Unique 
+//[Name] == jewel && [Quality] == Unique 
 
 //Small Charms
 [Name] == SmallCharm && [Quality] == unique
@@ -41,7 +41,7 @@
 //[Name] == SharkskinBoots &&  [Quality] == Unique //Waterwalks
 //[Name] == BattleBoots && [Quality] == Unique//War Travelers
 //[Name] == WarBoots && [Quality] == Unique //Gore Riders
-[Name] == ScarabshellBoots && [Quality] == Unique //Sandstorm Trek
+//[Name] == ScarabshellBoots && [Quality] == Unique //Sandstorm Trek
 //[Name] == BoneweaveBoots && [Quality] == Unique //Marrowwalk
 //[Name] == MyrmidonGreaves && [Quality] == Unique //Shadow Dancer
 
@@ -120,7 +120,7 @@
 //[Name] == BurntWand && [Quality] == Unique //Suicide Branch
 
 // AMAZON 
-[Name] == CeremonialJavelin && [Quality] == Unique //Titan's Revenge
+//[Name] == CeremonialJavelin && [Quality] == Unique //Titan's Revenge
 //[Name] == MatriarchalJavelin && [Quality] == Unique //Thunderstorke
 //[Name] == MatriarchalSpear && [Quality] == Unique //Stoneraven
 //[Name] == CeremonialPike && [Quality] == Unique //Lycander's Flank
@@ -179,7 +179,7 @@
 // BOOTS 
 [Name] == DemonhideBoots && [Quality] == Unique # [ItemGoldBonus] == 70 //Infernostride
 [Name] == SharkskinBoots && [Quality] == Unique # [MaxHP] == 65 //Waterwalks
-[Name] == BattleBoots && [Quality] == Unique && [Flag] != ethereal # [ItemMagicBonus] >= 49 //War Travelers
+[Name] == BattleBoots && [Quality] == Unique && [Flag] != ethereal # [ItemMagicBonus] >= 45 //War Travelers
 [Name] == WarBoots && [Quality] == Unique && [Flag] != ethereal # [Enhanced Defense] == 200 //Gore Riders
 [Name] == ScarabshellBoots && [Quality] == Unique && [Flag] != ethereal # [Strength] == 15 && [Vitality] == 15   //Sandstorm Trek
 [Name] == ScarabshellBoots && [Quality] == Unique && [Flag] == ethereal //Sandstorm Trek
@@ -260,7 +260,7 @@
 [Name] == WingedAxe && [Quality] == Unique && [Flag] == ethereal //Lacerator
 
 // WANDS 
-[Name] == LichWand && [Quality] == Unique //Boneshade
+//[Name] == LichWand && [Quality] == Unique //Boneshade
 [Name] == UnearthedWand && [Quality] == Unique //Death's Web
 
 // AMAZON 
@@ -296,13 +296,13 @@
 [Type] == ring && [Quality] == unique # [ItemMaxManaPercent] == 25 // Stone of Jordan
 //[Type] == ring && [Quality] == unique # [MaxHP] == 40 // Dwarf Star
 [Type] == ring && [Quality] == unique # [ToHit] >= 230 && [Dexterity] >= 18 // Raven Frost
-[Type] == ring && [Quality] == unique # [LifeLeech] >= 5 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
+[Type] == ring && [Quality] == unique # [LifeLeech] >= 3 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
 [Type] == ring && [Quality] == unique # [LifeLeech] >= 9 // Carrion Wind
 [Type] == ring && [Quality] == unique # [PoisonResist] >= 30 && [NormalDamageReduction] >= 11 // Nature's Peace
 [Type] == ring && [Quality] == unique # [ItemAbsorbLightPercent] >= 20 // Wisp Projector
 
 // AMULETS
-[Type] == amulet && [Quality] == unique # [Strength] == 12 && [ColdResist] >= 25 // Saracen's Chance
+//[Type] == amulet && [Quality] == unique # [Strength] == 12 && [ColdResist] >= 25 // Saracen's Chance
 [Type] == amulet && [Quality] == unique # [Dexterity] == 25 // The Cat's Eye
 //[Type] == amulet && [Quality] == unique # [LifeLeech] >= 6 && [ManaLeech] >= 15 // Crescent Moon
 //[Type] == amulet && [Quality] == unique # [PoisonResist] == 75 // Atma's Scarab
