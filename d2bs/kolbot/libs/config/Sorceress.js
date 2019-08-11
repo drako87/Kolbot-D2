@@ -403,16 +403,96 @@ function LoadConfig() {
 	 * Keep lines follow pickit format and any given runeword is tested vs ALL lines so you don't need to repeat them
 	 */
 	Config.MakeRunewords = false; // Set to true to enable runeword making/rerolling
-
-	//Config.Runewords.push([Runeword.Insight, "Thresher", Roll.Eth]); // Make ethereal Insight Thresher
-	//Config.Runewords.push([Runeword.Insight, "Cryptic Axe", Roll.Eth]); // Make ethereal Insight Cryptic Axe
-
-	//Config.KeepRunewords.push("[type] == polearm # [meditationaura] == 17");
-
-	//Config.Runewords.push([Runeword.Spirit, "Monarch", Roll.NonEth]); // Make Spirit Monarch
-	//Config.Runewords.push([Runeword.Spirit, "Sacred Targe", Roll.NonEth]); // Make Spirit Sacred Targe
-
-	//Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] == 35");
+ 
+	//insight
+	//Config.Runewords.push([Runeword.Insight, "poleaxe"]);
+	//Config.Runewords.push([Runeword.Insight, "halberd"]);
+	//Config.Runewords.push([Runeword.Insight, "bill"]);
+	//Config.Runewords.push([Runeword.Insight, "battlescythe"]);
+	//Config.Runewords.push([Runeword.Insight, "partizan"]);
+	//Config.Runewords.push([Runeword.Insight, "becdecorbin"]);
+	//Config.Runewords.push([Runeword.Insight, "thresher"]);
+	//Config.Runewords.push([Runeword.Insight, "crypticaxe"]);
+	//Config.Runewords.push([Runeword.Insight, "greatpoleaxe"]);
+	//Config.Runewords.push([Runeword.Insight, "colossusvoulge"]);
+ 
+	//Config.KeepRunewords.push("[type] == polearm # [meditationaura] <= 17");
+   
+	//smoke
+	//Config.Runewords.push([Runeword.Smoke, "lightplate"]);
+	//Config.Runewords.push([Runeword.Smoke, "ghostarmor"]);
+	//Config.Runewords.push([Runeword.Smoke, "serpentskinarmor"]);
+	//Config.Runewords.push([Runeword.Smoke, "demonhidearmor"]);
+	//Config.Runewords.push([Runeword.Smoke, "cuirass"]);
+	//Config.Runewords.push([Runeword.Smoke, "mageplate"]);
+	//Config.Runewords.push([Runeword.Smoke, "duskShroud"]);
+	//Config.Runewords.push([Runeword.Smoke, "wyrmhide"]);
+	//Config.Runewords.push([Runeword.Smoke, "scarabHusk"]);
+	//Config.Runewords.push([Runeword.Smoke, "wireFleece"]);
+	//Config.Runewords.push([Runeword.Smoke, "greatHauberk"]);
+	//Config.Runewords.push([Runeword.Smoke, "boneweave"]);
+	//Config.Runewords.push([Runeword.Smoke, "balrogSkin"]);
+	//Config.Runewords.push([Runeword.Smoke, "archonPlate"]);
+       
+	//Config.KeepRunewords.push("[type] == armor # [FireResist] == 50 && [LightResist] == 50 ");
+   
+	//AncientsPledge
+	//Config.Runewords.push([Runeword.AncientsPledge, "kiteshield"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "largeshield"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "boneshield"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "targe"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "rondache"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "aerinshield"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "crownshield"]);
+	//Config.Runewords.push([Runeword.AncientsPledge, "royalshield"]);
+ 
+	//Config.KeepRunewords.push("[type] == shield # [FireResist] >= 40 && [LightResist] >= 40 ");
+   
+	//Lore
+	//Config.Runewords.push([Runeword.Lore, "cap"]);
+	//Config.Runewords.push([Runeword.Lore, "skullcap"]);
+	//Config.Runewords.push([Runeword.Lore, "crown"]);
+	//Config.Runewords.push([Runeword.Lore, "mask"]);
+	//Config.Runewords.push([Runeword.Lore, "bonehelm"]);
+	//Config.Runewords.push([Runeword.Lore, "warhat"]);
+	//Config.Runewords.push([Runeword.Lore, "grimhelm"]);
+	//Config.Runewords.push([Runeword.Lore, "GrandCrown"]);
+	//Config.Runewords.push([Runeword.Lore, "Demonhead"]);
+	//Config.Runewords.push([Runeword.Lore, "BoneVisage"]);
+   
+	//Config.KeepRunewords.push("[type] == helm # [LightResist] >= 25");
+   
+	//CTA
+	//Config.Runewords.push([Runeword.CallToArms, "CrystalSword"]);
+	//Config.Runewords.push([Runeword.CallToArms, "Flail"]);
+   
+	//Config.KeepRunewords.push("[type] == sword || [type] == mace # [IAS] >= 40");
+   
+	//Spirit Sword
+	//Config.Runewords.push([Runeword.Spirit, "broadsword"]);
+	//Config.Runewords.push([Runeword.Spirit, "crystalSword"]);
+   
+	//Config.KeepRunewords.push("[type] == sword # [itemallskills] == 2");
+   
+	//Spirit Shield
+	//Config.Runewords.push([Runeword.Spirit, "targe"]);
+	//Config.Runewords.push([Runeword.Spirit, "rondache"]);
+	//Config.Runewords.push([Runeword.Spirit, "heraldicshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "aerinshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "crownshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "akarantarge"]);
+	//Config.Runewords.push([Runeword.Spirit, "akaranrondache"]);
+	//Config.Runewords.push([Runeword.Spirit, "protectorshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "gildedshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "royalshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
+	//Config.Runewords.push([Runeword.Spirit, "SacredTarge"]);  
+	//Config.Runewords.push([Runeword.Spirit, "sacredrondache"]);
+	//Config.Runewords.push([Runeword.Spirit, "kurastshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "zakarumshield"]);
+	//Config.Runewords.push([Runeword.Spirit, "vortexshield"]);
+   
+	//Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
 
 	// Public game options
 
