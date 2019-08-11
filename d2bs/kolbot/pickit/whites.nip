@@ -1,5 +1,5 @@
 // WHITES VERSION for KOLBOT adapted by DRAKO87
-// Made 09/05/2019
+// Made 11/08/2019
 // Same whites.nip made to work with kolbot 19.3.3.100
 
 //******* WHITES SECTION *****
@@ -37,16 +37,16 @@
 [Name] == SacredArmor && [Flag] != ethereal && [Quality] == Superior # [EnhancedDefense] == 15    
 
 //SPIRIT WHITE SWORD/SHIELDS
-//[Name]== CrystalSword && [Quality] <= Superior # [Sockets] == 4             
+//[Name]== CrystalSword && [Quality] <= Superior # [Sockets] == 4    
 [Name]== Monarch && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 4 && [Enhanced Defense] == 15   
-//[Name]== Monarch && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [Enhanced Defense] == 15   
+[Name]== Monarch && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [Enhanced Defense] == 15   
 //[Name]== Monarch && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 190
 
 [name] == monarch && [quality] == superior && [flag] != ethereal # [enhanceddefense] == 15 && ([itemmaxdurabilitypercent] == 0 || [itemmaxdurabilitypercent] == 15) && ([sockets] == 0 || [sockets] == 4)
 //[name] == trollnest && [quality] <= superior && [flag] != ethereal # [enhanceddefense] == 15 && ([itemmaxdurabilitypercent] == 0 || [itemmaxdurabilitypercent] == 15) && ([sockets] != 1 && [sockets] != 2)
 [name] == monarch && [quality] == normal && [flag] == ethereal # [sockets] == 0 && [defense] == 222 || [sockets] == 4 && [defense] == 333
 //[name] == trollnest && [quality] == normal && [flag] == ethereal # [sockets] == 0
-//[name] == monarch && [quality] <= superior # [sockets] == 4 # [maxquantity] == 1
+[name] == monarch && [quality] <= superior # [sockets] == 4 # [maxquantity] == 1
 
 //NORMAL/SUPERIOR 0 SOCKET ethereal WHITE ARMOR (WITH HIGH BASE DEF)
 //[Name] == ScarabHusk && [Flag] == ethereal && [Quality] < Superior # [Sockets] == 0 && [Defense] >= 474 
@@ -84,7 +84,7 @@
 //[Name] == Demonhead && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
 //[Name] == BoneVisage && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 225           
 //[Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
-//[Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
+[Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
 //[Name] == Diadem && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 85           
 //[Name] == TrollNest && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 250           
 //[Name] == TrollNest && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
@@ -168,9 +168,9 @@
 [Name]== GhostSpear && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
 [Name]== CrypticAxe && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
 [Name]== CrypticAxe && [Flag] == ethereal && [Quality] <= Superior #  [Sockets] == 4
-//[Name]== ColossusVoulge && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
+[Name]== ColossusVoulge && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
 [Name]== ColossusVoulge && [Flag] == ethereal && [Quality] <= Superior #  [Sockets] == 4
-//[Name]== ColossusVoulge && [Flag] == ethereal && [Quality] <= Superior #  [Sockets] == 0
+[Name]== ColossusVoulge && [Flag] == ethereal && [Quality] <= Superior #  [Sockets] == 0
 [Name]== Thresher && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
 [Name]== GiantThresher && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
 [Name]== GreatPoleaxe && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
@@ -396,11 +396,11 @@
 //([Name] == MilitaryPick || [Name] == WarAxe) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																	//CtA
 //[Name] == WarSpike && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)														//Death, BotD
 //[Name] == WarSpike && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Grief
-//[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)									//Oath, Death, BotD
-//[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)																				//Death, BotD
+[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)									//Oath, Death, BotD
+[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)																				//Death, BotD
 //[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)																		//Last Wish
 //[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 1 && ([Sockets] == 4 || [Sockets] == 5)																		//HoJ, Grief
-//[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 5																													//Grief
+[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 5																													//Grief
 //[Name] == GloriousAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																							//Death
 [Name] == Decapitator && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//Death
 [Name] == ThunderMaul && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)																			//BotD
