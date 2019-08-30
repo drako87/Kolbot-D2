@@ -363,7 +363,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]);  // Make Perfect Diamond
 	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]);    // Make Perfect Skull
 
-	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 	
 	//Config.Recipes.push([Recipe.Rune, 610]); // El Rune -> Eld Rune
 	//Config.Recipes.push([Recipe.Rune, 611]); // Eld Rune -> Tir Rune
@@ -425,8 +425,8 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.HitPower.Amulet]); 		// Amulet
 	//Config.Recipes.push([Recipe.HitPower.Ring]);			// Ring
 	
-	Config.Recipes.push([Recipe.HitPower.Gloves, 336]);	    // Chain Gloves
-	Config.Recipes.push([Recipe.HitPower.Gloves, 382]);	    // Heavy Bracers
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 336]);	    // Chain Gloves
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 382]);	    // Heavy Bracers
 	Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
 	//Config.Recipes.push([Recipe.HitPower.Helm, 309]); 	// Full Helm
 	//Config.Recipes.push([Recipe.HitPower.Helm, 355]); 	// Basinet
@@ -446,10 +446,10 @@ function LoadConfig() {
 	
 	// Blood Craft Recipe
 	//Config.Recipes.push([Recipe.Blood.Amulet]); 		    // Amulet
-	Config.Recipes.push([Recipe.Blood.Ring]);				// Ring
+	//Config.Recipes.push([Recipe.Blood.Ring]);				// Ring
 	
-	Config.Recipes.push([Recipe.Blood.Gloves, 335]); 		// Heavy Gloves
-	Config.Recipes.push([Recipe.Blood.Gloves, 381]); 		// Sharkskin Gloves
+	//Config.Recipes.push([Recipe.Blood.Gloves, 335]); 		// Heavy Gloves
+	//Config.Recipes.push([Recipe.Blood.Gloves, 381]); 		// Sharkskin Gloves
 	Config.Recipes.push([Recipe.Blood.Gloves, 451]); 		// Vampirebone Gloves
 	//Config.Recipes.push([Recipe.Blood.Helm, 308]); 		// Helm
 	//Config.Recipes.push([Recipe.Blood.Helm, 354]); 		// Casque
