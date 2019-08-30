@@ -350,66 +350,271 @@ function LoadConfig() {
 	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
-	Config.Cubing = false; // Set to true to enable cubing.
+	Config.Cubing = true; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
 	//Config.Recipes.push([Recipe.Gem, "Flawless Amethyst"]); // Make Perfect Amethyst
-	//Config.Recipes.push([Recipe.Gem, "Flawless Topaz"]); // Make Perfect Topaz
+	//Config.Recipes.push([Recipe.Gem, "Flawless Topaz"]);    // Make Perfect Topaz
 	//Config.Recipes.push([Recipe.Gem, "Flawless Sapphire"]); // Make Perfect Sapphire
-	//Config.Recipes.push([Recipe.Gem, "Flawless Emerald"]); // Make Perfect Emerald
-	//Config.Recipes.push([Recipe.Gem, "Flawless Ruby"]); // Make Perfect Ruby
-	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]); // Make Perfect Diamond
-	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]); // Make Perfect Skull
+	//Config.Recipes.push([Recipe.Gem, "Flawless Emerald"]);  // Make Perfect Emerald
+	//Config.Recipes.push([Recipe.Gem, "Flawless Ruby"]);     // Make Perfect Ruby
+	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]);  // Make Perfect Diamond
+	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]);    // Make Perfect Skull
 
-	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	
+	//Config.Recipes.push([Recipe.Rune, 610]); // El Rune -> Eld Rune
+	//Config.Recipes.push([Recipe.Rune, 611]); // Eld Rune -> Tir Rune
+	//Config.Recipes.push([Recipe.Rune, 612]); // Tir Rune -> Nef Rune
+	//Config.Recipes.push([Recipe.Rune, 613]); // Nef Rune -> Eth Rune
+	//Config.Recipes.push([Recipe.Rune, 614]); // Eth Rune -> Eth Rune
+	//Config.Recipes.push([Recipe.Rune, 615]); // Ith Rune -> Ith Rune
+	//Config.Recipes.push([Recipe.Rune, 616]); // Tal Rune -> Tal Rune
+	//Config.Recipes.push([Recipe.Rune, 617]); // Ral Rune -> Ort Rune
+	//Config.Recipes.push([Recipe.Rune, 618]); // Ort Rune -> Thul Rune
+	//Config.Recipes.push([Recipe.Rune, 619]); // Thul Rune -> Amn Rune
+	//Config.Recipes.push([Recipe.Rune, 620]); // Amn Rune -> Sol Rune
+	//Config.Recipes.push([Recipe.Rune, 621]); // Sol Rune -> Shael Rune
+	//Config.Recipes.push([Recipe.Rune, 622]); // Shael Rune -> Dol Rune
+	//Config.Recipes.push([Recipe.Rune, 623]); // Dol Rune -> Hel Rune
+	//Config.Recipes.push([Recipe.Rune, 624]); // Hel Rune -> Io Rune
+	//Config.Recipes.push([Recipe.Rune, 625]); // Io Rune -> Lum Rune
+	//Config.Recipes.push([Recipe.Rune, 626]); // Lum Rune -> Ko Rune
+	Config.Recipes.push([Recipe.Rune, 627]); // Ko Rune -> Fal Rune
+	Config.Recipes.push([Recipe.Rune, 628]); // Fal Rune -> Lem Rune
+	Config.Recipes.push([Recipe.Rune, 629]); // Lem Rune -> Pul Rune
+	Config.Recipes.push([Recipe.Rune, 630]); // Pul Rune -> Um Rune
+	Config.Recipes.push([Recipe.Rune, 631]); // Um Rune -> Mal Rune
+	Config.Recipes.push([Recipe.Rune, 632]); // Mal Rune -> Ist Rune
+	//Config.Recipes.push([Recipe.Rune, 633]); // Ist Rune -> Gul Rune
+	//Config.Recipes.push([Recipe.Rune, 634]); // Gul Rune -> Vex Rune
+	//Config.Recipes.push([Recipe.Rune, 635]); // Vex Rune -> Ohm Rune
+	//Config.Recipes.push([Recipe.Rune, 636]); // Ohm Rune -> Lo Rune
+	//Config.Recipes.push([Recipe.Rune, 637]); // Lo Rune -> Sur Rune
+	//Config.Recipes.push([Recipe.Rune, 638]); // Sur Rune -> Ber Rune
+	//Config.Recipes.push([Recipe.Rune, 639]); // Ber Rune -> Jah Rune
+	//Config.Recipes.push([Recipe.Rune, 640]); // Jah Rune -> Cham Rune
+	//Config.Recipes.push([Recipe.Rune, 641]); // Cham Rune -> Zod Rune
 
-	//Config.Recipes.push([Recipe.Rune, "Pul Rune"]); // Upgrade Pul to Um
-	//Config.Recipes.push([Recipe.Rune, "Um Rune"]); // Upgrade Um to Mal
-	//Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
-	//Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
-	//Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
+	// Caster Craft Recipe
+	//Config.Recipes.push([Recipe.Caster.Amulet]); 			// Amulet
+	Config.Recipes.push([Recipe.Caster.Ring]);			    // Ring
+	
+	//Config.Recipes.push([Recipe.Caster.Gloves, 343]);		// Leather Gloves
+	//Config.Recipes.push([Recipe.Caster.Gloves, 380]);		// Demonhide Gloves	
+	//Config.Recipes.push([Recipe.Caster.Gloves, 450]);		// Bramble Mitts
+	//Config.Recipes.push([Recipe.Caster.Helm, 312]);		// Mask
+	//Config.Recipes.push([Recipe.Caster.Helm, 358]);		// Death Mask
+	//Config.Recipes.push([Recipe.Caster.Helm, 428]);		// Demon Head
+	//Config.Recipes.push([Recipe.Caster.Armor, 327]);		// Light Plate
+	//Config.Recipes.push([Recipe.Caster.Armor, 373]);		// Mage Plate
+	//Config.Recipes.push([Recipe.Caster.Armor, 443]);		// Archon Plate
+	//Config.Recipes.push([Recipe.Caster.Boots, 339]);		// Boots
+	//Config.Recipes.push([Recipe.Caster.Boots, 385]);		// Demonhide Boots
+	//Config.Recipes.push([Recipe.Caster.Boots, 455]);		// Wyrmhide Boots
+	//Config.Recipes.push([Recipe.Caster.Shield, 329]);		// Small Shield
+	//Config.Recipes.push([Recipe.Caster.Shield, 375]);		// Round Shield
+	//Config.Recipes.push([Recipe.Caster.Shield, 445]);		// Luna
+	//Config.Recipes.push([Recipe.Caster.Belt, 345]);		// Light Belt
+	//Config.Recipes.push([Recipe.Caster.Belt, 391]);		// Sharkskin Belt
+	//Config.Recipes.push([Recipe.Caster.Belt, 461]);		// Vampirefang Belt
+	
+	// Hitpower Craft Recipe
+	//Config.Recipes.push([Recipe.HitPower.Amulet]); 		// Amulet
+	//Config.Recipes.push([Recipe.HitPower.Ring]);			// Ring
+	
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 336]);	    // Chain Gloves
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 382]);	    // Heavy Bracers
+	Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
+	//Config.Recipes.push([Recipe.HitPower.Helm, 309]); 	// Full Helm
+	//Config.Recipes.push([Recipe.HitPower.Helm, 355]); 	// Basinet
+	//Config.Recipes.push([Recipe.HitPower.Helm, 425]); 	// Giant Conch
+	//Config.Recipes.push([Recipe.HitPower.Armor, 323]); 	// Field Plate
+	//Config.Recipes.push([Recipe.HitPower.Armor, 369]); 	// Sharktooth Armor
+	//Config.Recipes.push([Recipe.HitPower.Armor, 439]); 	// Kraken Shell
+	//Config.Recipes.push([Recipe.HitPower.Boots, 341]); 	// Chain Boots
+	//Config.Recipes.push([Recipe.HitPower.Boots, 387]); 	// Mesh Boots
+	//Config.Recipes.push([Recipe.HitPower.Boots, 457]); 	// Boneweave Boots
+	//Config.Recipes.push([Recipe.HitPower.Shield, 333]);	// Gothic Shield
+	//Config.Recipes.push([Recipe.HitPower.Shield, 379]);	// Ancient Shield
+	//Config.Recipes.push([Recipe.HitPower.Shield, 449]);	// Ward
+	//Config.Recipes.push([Recipe.HitPower.Belt, 347]); 	// Heavy Belt
+	//Config.Recipes.push([Recipe.HitPower.Belt, 393]); 	// Battle Belt
+	//Config.Recipes.push([Recipe.HitPower.Belt, 463]); 	// Troll Belt
+	
+	// Blood Craft Recipe
+	//Config.Recipes.push([Recipe.Blood.Amulet]); 		    // Amulet
+	//Config.Recipes.push([Recipe.Blood.Ring]);				// Ring
+	
+	//Config.Recipes.push([Recipe.Blood.Gloves, 335]); 		// Heavy Gloves
+	//Config.Recipes.push([Recipe.Blood.Gloves, 381]); 		// Sharkskin Gloves
+	Config.Recipes.push([Recipe.Blood.Gloves, 451]); 		// Vampirebone Gloves
+	//Config.Recipes.push([Recipe.Blood.Helm, 308]); 		// Helm
+	//Config.Recipes.push([Recipe.Blood.Helm, 354]); 		// Casque
+	//Config.Recipes.push([Recipe.Blood.Helm, 424]); 		// Armet
+	//Config.Recipes.push([Recipe.Blood.Armor, 322]); 		// Plate Mail
+	//Config.Recipes.push([Recipe.Blood.Armor, 368]); 		// Templar Coat
+	//Config.Recipes.push([Recipe.Blood.Armor, 438]); 		// Hellforge Plate
+	//Config.Recipes.push([Recipe.Blood.Boots, 342]); 		// Light Plated Boots
+	//Config.Recipes.push([Recipe.Blood.Boots, 388]); 		// Battle Boots
+	//Config.Recipes.push([Recipe.Blood.Boots, 458]); 		// Mirrored Boots
+	//Config.Recipes.push([Recipe.Blood.Shield, 351]); 		// Spiked Shield
+	//Config.Recipes.push([Recipe.Blood.Shield, 397]); 		// Barbed Shield
+	//Config.Recipes.push([Recipe.Blood.Shield, 467]); 		// Blade Barrier
+	//Config.Recipes.push([Recipe.Blood.Belt, 346]); 		// Belt
+	//Config.Recipes.push([Recipe.Blood.Belt, 392]); 		// Mesh Belt
+	//Config.Recipes.push([Recipe.Blood.Belt, 462]); 		// Mithril Coil
+	
+	// Safety Craft Recipe
+	//Config.Recipes.push([Recipe.Safety.Amulet]); 			// Amulet
+	//Config.Recipes.push([Recipe.Safety.Ring]);			// Ring
+	
+	//Config.Recipes.push([Recipe.Safety.Gloves, 338]); 		// Gauntlets
+	//Config.Recipes.push([Recipe.Safety.Gloves, 384]); 		// War Gauntlets
+	//Config.Recipes.push([Recipe.Safety.Gloves, 454]); 		// Ogre Gauntlets
+	//Config.Recipes.push([Recipe.Safety.Helm, 311]); 		// Crown
+	//Config.Recipes.push([Recipe.Safety.Helm, 357]); 		// Grand Crown
+	//Config.Recipes.push([Recipe.Safety.Helm, 427]); 		// Corona
+	//Config.Recipes.push([Recipe.Safety.Armor, 320]); 		// Breast Plate
+	//Config.Recipes.push([Recipe.Safety.Armor, 366]); 		// Cuirass
+	//Config.Recipes.push([Recipe.Safety.Armor, 436]); 		// Great Hauberk
+	//Config.Recipes.push([Recipe.Safety.Boots, 343]); 		// Greaves
+	//Config.Recipes.push([Recipe.Safety.Boots, 389]); 		// War Boots
+	//Config.Recipes.push([Recipe.Safety.Boots, 459]); 		// Myrmidon Greaves
+	//Config.Recipes.push([Recipe.Safety.Shield, 331]); 	// Kite Shield
+	//Config.Recipes.push([Recipe.Safety.Shield, 377]); 	// Dragon Shield
+	//Config.Recipes.push([Recipe.Safety.Shield, 447]); 	// Monarch
+	//Config.Recipes.push([Recipe.Safety.Belt, 344]); 		// Sash
+	//Config.Recipes.push([Recipe.Safety.Belt, 390]); 		// Demonhide Sash
+	//Config.Recipes.push([Recipe.Safety.Belt, 460]); 		// Spiderweb Sash
 
-	//Config.Recipes.push([Recipe.Caster.Amulet]); // Craft Caster Amulet
-	//Config.Recipes.push([Recipe.Blood.Ring]); // Craft Blood Ring
-	//Config.Recipes.push([Recipe.Blood.Helm, "Armet"]); // Craft Blood Armet
-	//Config.Recipes.push([Recipe.HitPower.Gloves, "Vambraces"]); // Craft Hit Power Vambraces
-
-	// The gems not used by other recipes will be used for magic item rerolling.
-
-	//Config.Recipes.push([Recipe.Reroll.Magic, "Diadem"]); // Reroll magic Diadem
-	//Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
-
-	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
+	//Config.Recipes.push([Recipe.Reroll.Magic, 421]); 	    // Reroll magic Diadem
+	//Config.Recipes.push([Recipe.Reroll.Rare, 421]); 	    // Reroll rare Diadem
 
 	/* Base item for the following recipes must be in pickit. The rest of the ingredients will be auto-picked.
 	 * Use Roll.Eth, Roll.NonEth or Roll.All to determine what kind of base item to roll - ethereal, non-ethereal or all.
 	 */
-	//Config.Recipes.push([Recipe.Socket.Weapon, "Thresher", Roll.Eth]); // Socket ethereal Thresher
-	//Config.Recipes.push([Recipe.Socket.Weapon, "Cryptic Axe", Roll.Eth]); // Socket ethereal Cryptic Axe
-	//Config.Recipes.push([Recipe.Socket.Armor, "Sacred Armor", Roll.Eth]); // Socket ethereal Sacred Armor
-	//Config.Recipes.push([Recipe.Socket.Armor, "Archon Plate", Roll.Eth]); // Socket ethereal Archon Plate
+	// Roll
+	//Config.Recipes.push([Recipe.Socket.Weapon, "Colossus Voulge", Roll.Eth]);     // Socket ethereal Colossus Voulge
+	//Config.Recipes.push([Recipe.Socket.Weapon, "Berserker Axe", Roll.Eth]);       // Socket ethereal Berserker Axe
+	//Config.Recipes.push([Recipe.Socket.Weapon, "Thresher", Roll.Eth]);          // Socket ethereal Thresher
+	//Config.Recipes.push([Recipe.Socket.Weapon, "Cryptic Axe", Roll.Eth]);       // Socket ethereal Cryptic Axe
+	//Config.Recipes.push([Recipe.Socket.Armor, "Sacred Armor", Roll.Eth]);       // Socket ethereal Sacred Armor
+	//Config.Recipes.push([Recipe.Socket.Armor, "Archon Plate", Roll.Eth]);       // Socket ethereal Archon Plate
 
-	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Heavy Gloves", Roll.NonEth]); // Upgrade Bloodfist to Exceptional
+	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Heavy Gloves", Roll.NonEth]);    // Upgrade Bloodfist to Exceptional
 	//Config.Recipes.push([Recipe.Unique.Armor.ToExceptional, "Light Gauntlets", Roll.NonEth]); // Upgrade Magefist to Exceptional
-	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Sharkskin Gloves", Roll.NonEth]); // Upgrade Bloodfist or Grave Palm to Elite
-	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Battle Gauntlets", Roll.NonEth]); // Upgrade Magefist or Lavagout to Elite
-	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "War Boots", Roll.NonEth]); // Upgrade Gore Rider to Elite
+	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Sharkskin Gloves", Roll.NonEth]);      // Upgrade Bloodfist or Grave Palm to Elite
+	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Battle Gauntlets", Roll.NonEth]);      // Upgrade Magefist or Lavagout to Elite
+	//Config.Recipes.push([Recipe.Unique.Armor.ToElite, "War Boots", Roll.NonEth]);             // Upgrade Gore Rider to Elite
 
 	/* Runeword config. All recipes are available in Templates/Runewords.txt
 	 * Keep lines follow pickit format and any given runeword is tested vs ALL lines so you don't need to repeat them
 	 */
-	Config.MakeRunewords = false; // Set to true to enable runeword making/rerolling
-
-	//Config.Runewords.push([Runeword.Insight, "Thresher", Roll.Eth]); // Make ethereal Insight Thresher
-	//Config.Runewords.push([Runeword.Insight, "Cryptic Axe", Roll.Eth]); // Make ethereal Insight Cryptic Axe
-
-	//Config.KeepRunewords.push("[type] == polearm # [meditationaura] == 17");
-
-	//Config.Runewords.push([Runeword.Spirit, "Monarch", Roll.NonEth]); // Make Spirit Monarch
-	//Config.Runewords.push([Runeword.Spirit, "Sacred Targe", Roll.NonEth]); // Make Spirit Sacred Targe
-
-	//Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] == 35");
+	Config.MakeRunewords = true; // Set to true to enable runeword making/rerolling
+ 
+    // insight
+    //Config.Runewords.push([Runeword.Insight, 58]); // Voulge
+    //Config.Runewords.push([Runeword.Insight, 59]); // Scythe
+    //Config.Runewords.push([Runeword.Insight, 60]); // Poleaxe
+    //Config.Runewords.push([Runeword.Insight, 61]); // Halberd
+    //Config.Runewords.push([Runeword.Insight, 62]); // War Scythe
+	
+    //Config.Runewords.push([Runeword.Insight, 151]); // Bill
+    //Config.Runewords.push([Runeword.Insight, 152]); // Battle Scythe
+    //Config.Runewords.push([Runeword.Insight, 153]); // Partizan
+    //Config.Runewords.push([Runeword.Insight, 154]); // Bec-de-Corbin
+    //Config.Runewords.push([Runeword.Insight, 155]); // Grim Scythe
+	
+	Config.Runewords.push([Runeword.Insight, 254]); // Colossus Voulge
+	//Config.Runewords.push([Runeword.Insight, 255]); // Thresher
+	//Config.Runewords.push([Runeword.Insight, 256]); // Cryptic Axe
+	//Config.Runewords.push([Runeword.Insight, 257]); // Great Poleaxe
+	//Config.Runewords.push([Runeword.Insight, 258]); // Giant Thresher
+ 
+    Config.KeepRunewords.push("[type] == polearm && [Flag] == ethereal # [meditationaura] >= 17");
+   
+    // smoke
+    //Config.Runewords.push([Runeword.Smoke, "lightplate"]);
+    //Config.Runewords.push([Runeword.Smoke, "ghostarmor"]);
+    //Config.Runewords.push([Runeword.Smoke, "serpentskinarmor"]);
+    //Config.Runewords.push([Runeword.Smoke, "demonhidearmor"]);
+    //Config.Runewords.push([Runeword.Smoke, "cuirass"]);
+    //Config.Runewords.push([Runeword.Smoke, "mageplate"]);
+    //Config.Runewords.push([Runeword.Smoke, "duskShroud"]);
+    //Config.Runewords.push([Runeword.Smoke, "wyrmhide"]);
+    //Config.Runewords.push([Runeword.Smoke, "scarabHusk"]);
+    //Config.Runewords.push([Runeword.Smoke, "wireFleece"]);
+    //Config.Runewords.push([Runeword.Smoke, "greatHauberk"]);
+    //Config.Runewords.push([Runeword.Smoke, "boneweave"]);
+    //Config.Runewords.push([Runeword.Smoke, "balrogSkin"]);
+    //Config.Runewords.push([Runeword.Smoke, "archonPlate"]);
+       
+    //Config.KeepRunewords.push("[type] == armor # [FireResist] == 50 && [LightResist] == 50 ");
+   
+    // AncientsPledge
+    //Config.Runewords.push([Runeword.AncientsPledge, "kiteshield"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "largeshield"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "boneshield"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "targe"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "rondache"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "aerinshield"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "crownshield"]);
+    //Config.Runewords.push([Runeword.AncientsPledge, "royalshield"]);
+ 
+    //Config.KeepRunewords.push("[type] == shield # [FireResist] >= 40 && [LightResist] >= 40 ");
+   
+    // Lore
+    //Config.Runewords.push([Runeword.Lore, "cap"]);
+    //Config.Runewords.push([Runeword.Lore, "skullcap"]);
+    //Config.Runewords.push([Runeword.Lore, "crown"]);
+    //Config.Runewords.push([Runeword.Lore, "mask"]);
+    //Config.Runewords.push([Runeword.Lore, "bonehelm"]);
+    //Config.Runewords.push([Runeword.Lore, "warhat"]);
+    //Config.Runewords.push([Runeword.Lore, "grimhelm"]);
+    //Config.Runewords.push([Runeword.Lore, "GrandCrown"]);
+    //Config.Runewords.push([Runeword.Lore, "Demonhead"]);
+    //Config.Runewords.push([Runeword.Lore, "BoneVisage"]);
+   
+    //Config.KeepRunewords.push("[type] == helm # [LightResist] >= 25");
+   
+    // CTA
+    //Config.Runewords.push([Runeword.CallToArms, "CrystalSword"]);
+    //Config.Runewords.push([Runeword.CallToArms, "Flail"]);
+   
+    //Config.KeepRunewords.push("[type] == sword || [type] == mace # [IAS] >= 40");
+   
+    // Spirit Sword
+    //Config.Runewords.push([Runeword.Spirit, "broadsword"]);
+    //Config.Runewords.push([Runeword.Spirit, "crystalSword"]);
+   
+    //Config.KeepRunewords.push("[type] == sword # [itemallskills] == 2");
+   
+    // Spirit Shield
+    //Config.Runewords.push([Runeword.Spirit, "targe"]);
+    //Config.Runewords.push([Runeword.Spirit, "rondache"]);
+    //Config.Runewords.push([Runeword.Spirit, "heraldicshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "aerinshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "crownshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "akarantarge"]);
+    //Config.Runewords.push([Runeword.Spirit, "akaranrondache"]);
+    //Config.Runewords.push([Runeword.Spirit, "protectorshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "gildedshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "royalshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
+    //Config.Runewords.push([Runeword.Spirit, "SacredTarge"]);  
+    //Config.Runewords.push([Runeword.Spirit, "sacredrondache"]);
+    //Config.Runewords.push([Runeword.Spirit, "kurastshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "zakarumshield"]);
+    //Config.Runewords.push([Runeword.Spirit, "vortexshield"]);
+   
+    //Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
+    
+	// Hoto
+	//Config.Runewords.push([Runeword.HeartoftheOak, 21]); // Hoto Flail
+	
+	//Config.KeepRunewords.push("[Name] == Flail # [FireResist] >= 30");
 
 	// Public game options
 
