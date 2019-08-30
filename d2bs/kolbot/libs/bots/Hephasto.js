@@ -15,6 +15,7 @@ function Hephasto() {
 
 	Attack.kill(getLocaleString(1067)); // Hephasto The Armorer
 	Pickit.pickItems();
-
+    Attack.clear(10);
+	
 	return true;
 }

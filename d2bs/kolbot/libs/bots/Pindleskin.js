@@ -64,6 +64,7 @@ function Pindleskin() {
 		Attack.kill(526); // Nihlathak
 		//Attack.clear(15, 0, 526);
 		Pickit.pickItems();
+		Attack.clear(10);
 	}
 
 	return true;

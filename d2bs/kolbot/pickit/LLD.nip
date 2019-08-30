@@ -1,5 +1,5 @@
 // DLL VERSION for KOLBOT adapted by DRAKO87
-// Made 11/08/2019
+// Made 09/05/2019
 // Same LLD.nip made to work with kolbot 19.3.3.100
 
 // ******* RARES SECTION *******
@@ -21,14 +21,14 @@
 [Type] == Ring && [Quality] == Rare # [Dexterity] >= 15 && [MaxHP] >= 30 
 [Type] == Ring && [Quality] == Rare # [Dexterity] >= 15 && [LifeLeech] >= 6
 [Type] == Ring && [Quality] == Rare # [Strength] >= 15 && [LifeLeech] >= 6
-//[Type] == Ring && [Quality] == rare # [FCR] == 10
+[Type] == Ring && [Quality] == rare # [FCR] >= 10
 //[Type] == Ring && [Quality] == Magic # [FCR] == 10
 
 //50+ MF AMULET
 [Type] == Amulet && [Quality] == rare # [ItemMagicBonus] == 50
 
 //+2 CHAR SPECIFIC
-//[Type] == Amulet && [Quality] == rare # [FCR] == 10
+[Type] == Amulet && [Quality] == rare # [FCR] >= 20
 //[Type] == Amulet && [Quality] == Magic # [FCR] == 10
 [Type] == Amulet && [Quality] == rare # [AssassinSkills] == 2 && [FCR] == 10 && [Strength] >= 15 && [Dexterity] >= 10
 [Type] == Amulet && [Quality] == rare # [AssassinSkills] == 2 && [FCR] == 10 && [Strength] >= 15 && [MaxHP] >= 30
@@ -199,34 +199,34 @@
 [Type] == Amulet && [Quality] == rare # [WarCriesSkillTab] == 2 && [FCR] == 10 && [Strength] >= 15 && [ColdResist] >= 25 && [LightResist] >= 25
 
 //+2 CLASS SKILL/20 [FCR] CIRCLET
-[Type] == Circlet && [Quality] == Rare # [AssassinSkills] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [AssassinSkills] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [AssassinSkills] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [AssassinSkills] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10 
 [Type] == Circlet && [Quality] == Rare # [DruidSkills] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [DruidSkills] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [DruidSkills] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [DruidSkills] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [SorceressSkills] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [SorceressSkills] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [SorceressSkills] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [SorceressSkills] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [NecromancerSkills] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [NecromancerSkills] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [NecromancerSkills] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [NecromancerSkills] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [PaladinSkills] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [PaladinSkills] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [PaladinSkills] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [PaladinSkills] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 20 && [Strength] >= 15 && [MaxHP] >= 10
-[Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 30 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [AmazonSkills] == 2 && [FRW] == 30 && [Sockets] != 2
 
 //+2 TREE SKILLS/20 [FCR] CIRCLET
-[Type] == Circlet && [Quality] == Rare # [LightningSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [ColdSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [FireSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [PoisonAndBoneSkillTab]   == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [ElementalSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [PaliCombatSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
-[Type] == Circlet && [Quality] == Rare # [TrapsSkillTab] == 2 && [FCR] == 20 && [Sockets] == 2
+[Type] == Circlet && [Quality] == Rare # [LightningSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [ColdSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [FireSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [PoisonAndBoneSkillTab]   == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [ElementalSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [PaliCombatSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
+[Type] == Circlet && [Quality] == Rare # [TrapsSkillTab] == 2 && [FCR] == 20 && [Sockets] != 2
 [Type] == Circlet && [Quality] == Rare # [LightningSkillTab] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [ColdSkillTab] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
 [Type] == Circlet && [Quality] == Rare # [FireSkillTab] == 2 && [FCR] == 20 && [Strength] >= 15 && [MaxHP] >= 10
@@ -243,9 +243,9 @@
 [Type] == Circlet && [Quality] == Rare # [TrapsSkillTab] == 2 && [FCR] == 20 && [Dexterity] >= 15 && [MaxHP] >= 10
 
 //VISIONARY CIRCLET
-[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] == 2 && [Strength] >= 10
-[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] == 2 && [Dexterity] >= 10
-[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] == 2 && [FireResist] >= 20 && [ColdResist] >= 20 && [LightResist] >= 20 && [PoisonResist] >= 20
+[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] != 2 && [Strength] >= 10
+[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] != 2 && [Dexterity] >= 10
+[Type] == Circlet && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] != 2 && [FireResist] >= 20 && [ColdResist] >= 20 && [LightResist] >= 20 && [PoisonResist] >= 20
 
 //RARE VISIONARY PRIMAL HELM
 [Type] == Primalhelm && [Quality] == Rare # [FHR] >= 10 && [MaxHP] >= 20 && [ItemToHitPercentPerLevel] > 1 && [Sockets] == 2
@@ -269,6 +269,9 @@
 [Type] == Gloves && [Flag] != ethereal && [Quality] == Rare # [IAS] == 20 && [ItemAddBowAndCrossbowSkillTab] == 2 && [Strength] >= 10 && [Dexterity] >= 10 
 [Type] == Gloves && [Flag] != ethereal && [Quality] == Rare # [IAS] == 20 && [itemaddpassiveandmagicskilltab] == 2 && [Strength] >= 10 && [Dexterity] >= 10 
 [Type] == Gloves && [Flag] != ethereal && [Quality] == Rare # [IAS] == 20 && [itemaddJavelinAndSpearSkillTab] == 2 && [Strength] >= 10 && [Dexterity] >= 10 
+[Type] == gloves && [Quality] == rare && [Flag] != ethereal # [IAS] >= 20 && [Strength] + [Dexterity] >= 28
+//[Type] == gloves && [Quality] == rare && [Flag] != ethereal # [IAS] >= 20 && ([Strength] >= 10 || [Dexterity] >= 10) || ([LifeLeech] >= 3 || [ManaLeech] >= 3)
+[Type] == gloves && [Quality] == rare && [Flag] != ethereal # [IAS] >= 20 && [ItemAddSkillTab] >= 2 && [Strength] + [Dexterity] >= 15
 
 //RARE BOOTS
 [Type] == Boots && [Flag] != ethereal && [Quality] == Rare # [FRW] >=20 && [FHR] >= 20 && [ColdResist] >= 25 && [LightResist] >= 25
@@ -673,6 +676,7 @@
 
 //SKILL/[IAS] MAGIC GLOVES
 [Type] == Gloves && [Quality] == Magic # [JavelinAndSpearSkillTab] == 3 && [IAS] == 20 //
+[Type] == Gloves && [Quality] == Rare # [JavelinAndSpearSkillTab] >= 2 && [IAS] >= 10 //
 [Type] == Gloves && [Quality] == Magic # [BowAndCrossbowSkillTab] == 3 && [IAS] == 20 //
 [Type] == Gloves && [Quality] == Magic # [PassiveAndMagicSkillTab] == 3 && [IAS] == 20 //
 [Type] == Gloves && [Quality] == Magic # [MartialArtsSkillTab] == 3 && [IAS] == 20 //

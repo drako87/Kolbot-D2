@@ -45,13 +45,14 @@ function main() {
 			delay(1000);
 		}
 	}
-
+	
 	if (getScript("d2botmanual.dbj")) {
 
 		while (true) {
 			delay(1000);
 		}
 	}
+	
 
 	// don't load default for mules
 	if (getScript("D2BotMule.dbj")) {

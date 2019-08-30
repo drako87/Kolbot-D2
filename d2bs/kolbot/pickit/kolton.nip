@@ -1,16 +1,16 @@
 // KOLTON VERSION for KOLBOT adapted by DRAKO87
-// Made 11/08/2019
+// Made 09/05/2019
 // Same kolton.nip made to work with kolbot 19.3.3.100
 
 // ***** UNIDENTIFIED UNIQUES SECTION *****
 //RINGS
-[Type] == ring && [Quality] == Unique 
+//[Type] == ring && [Quality] == Unique 
 
 //AMULETS
-[Type] == amulet && [Quality] == Unique 
+//[Type] == amulet && [Quality] == Unique 
 
 //UNIQUE JEWELS
-[Name] == jewel && [Quality] == Unique 
+//[Name] == jewel && [Quality] == Unique 
 
 //Small Charms
 [Name] == SmallCharm && [Quality] == unique
@@ -19,7 +19,7 @@
 [Name] == LargeCharm && [Quality] == unique
 
 //CHARMS
-[Name] == GrandCharm && [Quality] == Unique
+//[Name] == GrandCharm && [Quality] == Unique
 
 // GLOVES
 //[Name] == ChainGloves && [Quality] == Unique //Chance Guards
@@ -32,7 +32,7 @@
 //[Name] == HeavyBelt && [Quality] == Unique //Goldwrap
 //[Name] == DemonhideSash && [Quality] == Unique //String Of Ears
 //[Name] == WarBelt && [Quality] == Unique //Thundergod's Vigor
-[Name] == SpiderwebSash && [Quality] == Unique // Arachnid Mesh
+//[Name] == SpiderwebSash && [Quality] == Unique // Arachnid Mesh
 //[Name] == MithrilCoil && [Quality] == Unique //Verdungo's Hearty Cord
 //[Name] == VampirefangBelt && [Quality] == Unique //Nosferatu's Coil
 
@@ -50,7 +50,7 @@
 //[Name] == Shako && [Quality] == Unique //Harlequin Crest
 //[Name] == GrimHelm && [Quality] == Unique //Vampire's Gaze
 //[Name] == SpiredHelm && [Quality] == Unique //Nighteing's Veil
-[Name] == Demonhead && [Quality] == Unique //Andariel's Visage
+//[Name] == Demonhead && [Quality] == Unique //Andariel's Visage
 //[Name] == BoneVisage && [Quality] == Unique //Giant Skull
 //[Name] == Tiara  && [Quality] == Unique //Kira's Guardian
 [Name] == Diadem && [Quality] == Unique //Griffon's Eye
@@ -109,7 +109,7 @@
 
 //THROWING WEAPONS 
 //[Name] == WingedKnife && [Quality] == Unique && [Flag] == ethereal //Warshrike
-[Name] == WingedAxe && [Quality] == Unique && [Flag] == ethereal //Lacerator
+//[Name] == WingedAxe && [Quality] == Unique && [Flag] == ethereal //Lacerator
 //[Name] == WingedKnife && [Quality] == Unique //Gimmershred
 
 // WANDS 
@@ -156,7 +156,7 @@
 //[Name] == EarthSpirit && [Quality] == Unique //Spirit Keeper
 
 //PALADIN
-[Name] == GildedShield && [Quality] == Unique //Herald of Zakarum
+//[Name] == GildedShield && [Quality] == Unique //Herald of Zakarum
 //[Name] == SacredRondache && [Quality] == Unique //Alma Negra
 //[Name] == ZakarumShield && [Quality] == Unique //Dragonscale
 
@@ -169,12 +169,12 @@
 //[Name] == Gauntlets && [Quality] == Unique # [Enhanced Defense] == 20 //Frostburn
 
 // BELTS
-[Name] == HeavyBelt && [Quality] == Unique && [Flag] != ethereal # [ItemGoldBonus] == 80 //Goldwrap
+//[Name] == HeavyBelt && [Quality] == Unique && [Flag] != ethereal # [ItemGoldBonus] == 80 //Goldwrap
 [Name] == DemonhideSash && [Flag] != ethereal && [Quality] == Unique # [LifeLeech] == 8 && [DamageResist] == 15 && [magicdamagereduction] == 15 && [Enhanced Defense] == 180 //String Of Ears
 [Name] == WarBelt && [Quality] == Unique && [Flag] != ethereal # [Enhanced Defense] == 200 //Thundergod's Vigor
-[Name] == SpiderwebSash && [Quality] == Unique && [Flag] != ethereal // Arachnid Mesh
+[Name] == SpiderwebSash && [Quality] == Unique && [Flag] != ethereal # [Enhanced Defense] >= 119// Arachnid Mesh
 [Name] == MithrilCoil && [Quality] == Unique && [Flag] != ethereal # [Vitality] == 40 && [DamageResist] == 15 // Verdungo's Hearty Cord
-[Name] == VampirefangBelt && [Flag] != ethereal && [Quality] == Unique //Nosferatu's Coil
+//[Name] == VampirefangBelt && [Flag] != ethereal && [Quality] == Unique //Nosferatu's Coil
 
 // BOOTS 
 [Name] == DemonhideBoots && [Quality] == Unique # [ItemGoldBonus] == 70 //Infernostride
@@ -211,7 +211,7 @@
 [Name] == DuskShroud && [Quality] == Unique # ([SkillBlizzard] >= 3 || [SkillGlacialSpike] >= 3 || [SkillIceBlast] >= 3)								//ORMUS' ROBES
 
 // SHIELDS
-[Name] == RoundShield && [Quality] == Unique //Mosser's Blessed Circle
+//[Name] == RoundShield && [Quality] == Unique //Mosser's Blessed Circle
 [Name] == TrollNest && [Quality] == Unique && [Flag] == ethereal # [Sockets] == 3   //Headhunter's Glory
 [Name] == Monarch && [Quality] == unique && [Flag] != identified # [Defense] >= 140 // Stormshield
 [Name] == GrimShield && [Quality] == unique && [Flag] != ethereal # [EnhancedDefense] >= 110 // Lidless Wall
@@ -265,7 +265,7 @@
 
 // AMAZON 
 [Name] == CeremonialJavelin && [Quality] == Unique && [Flag] == ethereal //Titan's Revenge
-[Name] == MatriarchalJavelin && [Quality] == Unique && [Flag] == ethereal //Thunderstorke
+//[Name] == MatriarchalJavelin && [Quality] == Unique && [Flag] == ethereal //Thunderstorke
 
 // ASSASSIN 
 [Name] == GreaterTalons && [Quality] == Unique # [Enhanced Damage] >= 200 //Bartuc's Cutthroat
@@ -287,8 +287,8 @@
 [Name] == TotemicMask && [Quality] == Unique # [Enhanced Defense] == 200 //Jalal's Mane
 
 //PALADIN
-[Name] == GildedShield && [Quality] == unique # [EnhancedDefense] >= 180 // Herald Of Zakarum
-[Name] == ZakarumShield && [Quality] == unique # [Defense] >= 500 && [EnhancedDefense] >= 180 && [PaladinSkills] >= 2 // Herald Of Zakarum
+[Name] == GildedShield && [Quality] == unique # [EnhancedDefense] >= 195 // Herald Of Zakarum
+[Name] == ZakarumShield && [Quality] == unique # [Defense] >= 500 && [EnhancedDefense] >= 195 && [PaladinSkills] >= 2 // Herald Of Zakarum
 
 // RINGS
 [Type] == ring && [Quality] == unique # [ItemMagicBonus] == 30 // Nagelring
@@ -297,28 +297,28 @@
 //[Type] == ring && [Quality] == unique # [MaxHP] == 40 // Dwarf Star
 [Type] == ring && [Quality] == unique # [ToHit] >= 230 && [Dexterity] >= 18 // Raven Frost
 [Type] == ring && [Quality] == unique # [LifeLeech] >= 3 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
-[Type] == ring && [Quality] == unique # [LifeLeech] >= 9 // Carrion Wind
+//[Type] == ring && [Quality] == unique # [LifeLeech] >= 9 // Carrion Wind
 [Type] == ring && [Quality] == unique # [PoisonResist] >= 30 && [NormalDamageReduction] >= 11 // Nature's Peace
 [Type] == ring && [Quality] == unique # [ItemAbsorbLightPercent] >= 20 // Wisp Projector
 
 // AMULETS
 //[Type] == amulet && [Quality] == unique # [Strength] == 12 && [ColdResist] >= 25 // Saracen's Chance
-[Type] == amulet && [Quality] == unique # [Dexterity] == 25 // The Cat's Eye
+//[Type] == amulet && [Quality] == unique # [Dexterity] == 25 // The Cat's Eye
 //[Type] == amulet && [Quality] == unique # [LifeLeech] >= 6 && [ManaLeech] >= 15 // Crescent Moon
 //[Type] == amulet && [Quality] == unique # [PoisonResist] == 75 // Atma's Scarab
 //[Type] == amulet && [Quality] == unique # [HPRegen] == 10 // The Rising Sun
-[Type] == amulet && [Quality] == unique # [LightResist] == 35 // Highlord's Wrath
+//[Type] == amulet && [Quality] == unique # [LightResist] == 35 // Highlord's Wrath
 [Type] == amulet && [Quality] == unique # [Strength] == 5 && [ColdResist] >= 25 // Mara's Kaleidoscope
-[Type] == amulet && [Quality] == unique # [DefensiveAurasSkillTab] >= 2 // Seraph's Hymn
+//[Type] == amulet && [Quality] == unique # [DefensiveAurasSkillTab] >= 2 // Seraph's Hymn
 [Type] == amulet && [Quality] == unique # [ToHit] >= 430 && [ColdResist] >= 30 // Metalgrid
 
 // UNIQUE JEWELS
-[Type] == jewel && [Quality] == unique # [PassiveFireMastery]+[PassiveFirePierce] >= 9 // Rainbow Facet
-[Type] == jewel && [Quality] == unique # [PassiveLtngMastery]+[PassiveLtngPierce] >= 9 // Rainbow Facet
-[Type] == jewel && [Quality] == unique # [PassiveColdMastery]+[PassiveColdPierce] >= 9 // Rainbow Facet
-[Type] == jewel && [Quality] == unique # [PassivePoisMastery]+[PassivePoisPierce] >= 9 // Rainbow Facet  
+[Type] == jewel && [Quality] == unique # [PassiveFireMastery]+[PassiveFirePierce] == 10 // Rainbow Facet
+[Type] == jewel && [Quality] == unique # [PassiveLtngMastery]+[PassiveLtngPierce] == 10 // Rainbow Facet
+[Type] == jewel && [Quality] == unique # [PassiveColdMastery]+[PassiveColdPierce] == 10 // Rainbow Facet
+[Type] == jewel && [Quality] == unique # [PassivePoisMastery]+[PassivePoisPierce] == 10 // Rainbow Facet  
 
 // CHARM
-[Name] == GrandCharm && [Quality] == Unique # [ItemMagicBonus] == 40 //Gheed's
-[Name] == GrandCharm && [Quality] == Unique # [ItemGoldBonus] == 160 //Gheed's
+[Name] == GrandCharm && [Quality] == Unique # [ItemMagicBonus] >= 39 //Gheed's
+[Name] == GrandCharm && [Quality] == Unique # [ItemGoldBonus] >= 150 //Gheed's
 [Name] == GrandCharm && [Quality] == Unique # [ItemReducedPrices] >= 15 //Gheed's

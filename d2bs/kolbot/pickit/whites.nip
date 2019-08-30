@@ -1,5 +1,5 @@
 // WHITES VERSION for KOLBOT adapted by DRAKO87
-// Made 11/08/2019
+// Made 09/05/2019
 // Same whites.nip made to work with kolbot 19.3.3.100
 
 //******* WHITES SECTION *****
@@ -83,13 +83,13 @@
 //[Name] == Demonhead && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
 //[Name] == Demonhead && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
 //[Name] == BoneVisage && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 225           
-//[Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
+[Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
 [Name] == BoneVisage && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
 //[Name] == Diadem && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 85           
 //[Name] == TrollNest && [Flag] == ethereal && [Quality] <= Superior # [Sockets] == 0 && [Defense] >= 250           
 //[Name] == TrollNest && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 0 && [EnhancedDefense] == 15     
 //[Name] == TrollNest && [Flag] != ethereal && [Quality] == Superior # [Sockets] == 3 && [EnhancedDefense] == 15     
-([name] == demonhead || [name] == bonevisage || [name] == diadem) && [quality] <= superior && [flag] != ethereal # [enhanceddefense] == 15 && ([itemmaxdurabilitypercent] == 0 || [itemmaxdurabilitypercent] == 15) && [sockets] == 3
+//([name] == demonhead || [name] == bonevisage || [name] == diadem) && [quality] <= superior && [flag] != ethereal # [enhanceddefense] == 15 && ([itemmaxdurabilitypercent] == 0 || [itemmaxdurabilitypercent] == 15) && [sockets] == 3
 //([name] == demonhead || [name] == bonevisage) && [quality] == normal && [flag] == ethereal # [sockets] == 0
 
 //PALADIN WHITE SHIELDS
@@ -159,10 +159,12 @@
 //[Name]== DreamSpirit && [Quality] <= Superior # [SkillTornado] == 3 && [Sockets] != 1 && [Sockets] != 2       
 
 //MAIN WEAPON RUNEWORD SOCKETABLES
-//[Name]== BerserkerAxe && [Flag] == ethereal && [Quality] <= Superior
+[Name]== BerserkerAxe && [Quality] >= Superior # [Sockets] >= 5
+[Name]== BerserkerAxe && [Quality] >= normal # [Sockets] >= 5
+[Name]== BerserkerAxe && [Flag] == ethereal && [Quality] <= Superior
 [Name]== BerserkerAxe && [Flag] != ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
 [Name]== PhaseBlade && [Quality] <= Superior # [EnhancedDamage] == 15
-//[Name]== PhaseBlade && [Quality] <= Superior # [Sockets] == 5
+[Name]== PhaseBlade && [Quality] <= Superior # [Sockets] >= 5 && [EnhancedDamage] >= 10
 [Name]== ColossusBlade && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] ==15
 [Name]== WarPike && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
 [Name]== GhostSpear && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
@@ -175,13 +177,11 @@
 [Name]== GiantThresher && [Flag] == ethereal && [Quality] <= Superior # [EnhancedDamage] >= 10
 [Name]== GreatPoleaxe && [Flag] == ethereal && [Quality] <= Superior #  [EnhancedDamage] >= 10
 [Name]== GreatPoleaxe && [Flag] == ethereal && [Quality] <= Superior #  [Sockets] == 4   
-//[Name]== CrystalSword && [Quality] <= Superior # [Sockets] == 5
-//[Name]== CrystalSword && [Quality] <= Superior # [Sockets] == 6
+//[Name]== CrystalSword && [Quality] >= Superior # [Sockets] == 5
 [Name]== MatriarchalBow && [Quality] <= Superior # [BowAndCrossbowSkillTab] == 3 && [EnhancedDamage] >= 10
 [Name]== GrandMatronBow   && [Quality] <= Superior # [BowAndCrossbowSkillTab] == 3 && [EnhancedDamage] >= 10
 [Name]== GreatBow && [Quality] <= Superior # [EnhancedDamage] == 15
-//[Name]== Flail && [Quality] <= Superior # [Sockets] == 4
-//[Name]== Flail && [Quality] <= Superior # [Sockets] == 5
+//[Name]== Flail && [Quality] <= Superior # [Sockets] >= 4
 
 //NECROMANCER WANDS WHITE RUNEWORD
 [Type] == Wand && [Quality] <= Superior # [SkillPoisonNova] == 3 && [SkillDecrepify] >= 2     
@@ -354,17 +354,17 @@
 [Name] == SacredTarge && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] == 0																		//Exile
 [Name] == SacredTarge && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] == 0																	//Exile
 [Name] == SacredRondache && [Quality] <= Superior && [Flag] != Ethereal # [FireResist] >= 45 && [EnhancedDefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4)	//Sanctuary, Spirit, Phoenix
-[Name] == SacredRondache && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] == 0																	//Exile
-[Name] == SacredRondache && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] == 0																//Exile
+[Name] == SacredRondache && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] != 0																	//Exile
+[Name] == SacredRondache && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] != 0																//Exile
 [Name] == KurastShield && [Quality] <= Superior && [Flag] != Ethereal # [FireResist] >= 45 && [EnhancedDefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4)	//Sanctuary. Spirit, Phoenix
-[Name] == KurastShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] == 0																		//Exile
-[Name] == KurastShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] == 0																	//Exile
+[Name] == KurastShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] != 0																		//Exile
+[Name] == KurastShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] != 0																	//Exile
 [Name] == ZakarumShield && [Quality] <= Superior && [Flag] != Ethereal # [FireResist] >= 45 && [EnhancedDefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4)	//Sanctuary, Spirit, Phoenix
-[Name] == ZakarumShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] == 0																	//Exile
-[Name] == ZakarumShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] == 0																//Exile
+[Name] == ZakarumShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 40 && [Sockets] != 0																	//Exile
+[Name] == ZakarumShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] != 0																//Exile
 [Name] == VortexShield && [Quality] <= Superior && [Flag] != Ethereal # [FireResist] >= 45 && [EnhancedDefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4)	//Sanctuary, Spirit, Phoenix
-[Name] == VortexShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 35 && [Sockets] == 0																		//Exile
-[Name] == VortexShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] == 0																	//Exile
+[Name] == VortexShield && [Quality] < Superior && [Flag] == Ethereal # [FireResist] >= 35 && [Sockets] != 0																		//Exile
+[Name] == VortexShield && [Quality] < Superior && [Flag] == Ethereal # [EnhancedDamage] >= 60 && [Sockets] != 0																	//Exile
 [Name] == TowerShield && [Quality] == Superior && [Flag] != Ethereal # [EnhancedDefense] >= 15 && ([Sockets] == 0 || [Sockets] == 3)											//Dream, Sanctuary
 [Name] == Pavise && [Quality] == Superior && [Flag] != Ethereal # [EnhancedDefense] >= 15 && [Sockets] == 3																		//Dream, Sanctuary
 //[Name] == TrollNest && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 250 && [Sockets] == 0																		//Dream
@@ -419,7 +419,7 @@
 //[Name] == Scythe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																								//Infinity
 //[Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																	//Infinity, Insight, Pride
 //[Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 4)																								//Infinity, Insight, Pride
-//[Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 4																													//Infinity, Insight, Pride
+[Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 4																													//Infinity, Insight, Pride
 //([Name] == CrypticAxe || [Name] == Thresher) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5)								//Infinity, Insight, Pride, Obedience, Doom
 //([Name] == CrypticAxe || [Name] == Thresher) && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 5)																			//Infinity, Insight, Pride, Obedience, Doom
 [Name] == GreatPoleaxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 6)														//Infinity, Insight, Pride, BotD

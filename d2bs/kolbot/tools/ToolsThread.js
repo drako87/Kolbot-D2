@@ -348,7 +348,7 @@ function main() {
 	// Event functions
 	this.keyEvent = function (key) {
 		switch (key) {
-		case 19: // Pause/Break key
+		case 53: // Pause/Break key
 			this.togglePause();
 
 			break;

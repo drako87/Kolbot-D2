@@ -1,5 +1,5 @@
 // CRASOUP VERSION for KOLBOT adapted by DRAKO87
-// Made 11/08/2019
+// Made 09/05/2019
 // Same crasoup.nip made to work with kolbot 19.3.3.100
 
 // **AMULETS**
@@ -64,13 +64,22 @@
 //[Name] == PerfectAmethyst
 
 //HITPOWER & BLOOD GLOVES
+[Type] == Gloves && [Quality] == Crafted # [FCR] >= 20
+[Type] == Gloves && [Quality] == Crafted # [IAS] >= 20
+[Type] == Gloves && [Quality] == Crafted # [IAS] >= 20 && [Dexterity] + [Strength] >= 20
+[type] == gloves && [quality] == crafted # [ias] >= 20 && [strength]+[dexterity] >= 15
+[type] == gloves && [quality] == crafted # [itemknockback] >= 1 && [ias] >= 20 && [strength]+[dexterity] >= 15
 [Type] == Gloves && [Quality] == Crafted # [IAS] == 20 && [Dexterity] >= 1 && [Strength] >= 1 && ([ItemCrushingBlow] >= 5 || [ItemKnockBack] >= 1)
+[Type] == gloves && [Quality] == crafted # [ItemKnockBack] >= 1 && [ItemAddSkillTab] >= 2 && [IAS] >= 20 && ([Strength] >= 14 || [Dexterity] >= 14) && ([LifeLeech] >= 3 || [ManaLeech] >= 3)
+[Type] == gloves && [Quality] == crafted # [ItemKnockBack] >= 1 && [ItemAddSkillTab] >= 2 && [IAS] >= 20 && [Strength]+[Dexterity] >= 25
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 9 && [LifeLeech] >= 6 && [IAS] >= 20 && ([Strength] >= 14 || [Dexterity] >= 14)
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 9 && [LifeLeech] >= 6 && [Strength]+[Dexterity] >= 25
 
 //BLOOD RINGS
 [Type] == Ring && [Quality] == Crafted # [FCR] >= 10
-[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength] >= 1 && [ItemMagicBonus] >= 25
-[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 1 && [MaxHP] >= 35
-[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 1 && [Dexterity] >= 10 && [MaxHP] >= 25
+[Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength] >= 5 && [ItemMagicBonus] >= 25
+[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 5 && [MaxHP] >= 35
+[Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && [Strength] >= 5 && [Dexterity] >= 10 && [MaxHP] >= 25
 [Type] == Ring && [Quality] == Crafted # [FCR] >= 10 && ([Dexterity] >= 10 || [Strength] >= 15) && [MaxHP] >= 25
 [Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && [HPRegen] >= 7
 [Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [FCR] >= 10 && ([Dexterity] >= 13 || [Strength] >= 17) && ([ColdResist] >= 15 || [FireResist] >= 15 || [LightResist] >= 15)
@@ -90,6 +99,27 @@
 [Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && ([Dexterity] >= 15 || [Strength] >= 17) && [ManaLeech]+[LifeLeech] >= 10
 [Type] == Ring && [Quality] == Crafted # [MaxHP] >= 10 && [Strength] >= 5 && [ManaLeech]+[LifeLeech] >= 10 && (([ColdResist]+[FireResist] >= 30) || ([ColdResist]+[LightResist] >= 30) || ([FireResist]+[LightResist] >= 30))
 [Type] == Ring && [Quality] == Crafted # [Strength] >= 1 && [ManaLeech]+[LifeLeech] >= 10 && [MaxHP] >= 35
+[Type] == ring && [Quality] == crafted # [LifeLeech] >= 10 && [ToHit] >= 90 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 40 && ([Strength] >= 20 || [Dexterity] >= 10 || [ManaLeech] >= 6)
+[Type] == ring && [Quality] == crafted # [LifeLeech] >= 10 && [ToHit] >= 90 && [Strength]+[Dexterity] >= 15
+[Type] == ring && [Quality] == crafted # ([FCR] >= 10 || [ItemMagicBonus] >= 15) && (([FireResist] >= 14 && [LightResist] >= 14) || [MaxMana] >= 110)
+[Type] == ring && [Quality] == crafted # [FCR] >= 10 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 36 && [MaxMana] >= 70 && [Strength]+[Dexterity] >= 25
+[Type] == ring && [Quality] == crafted # [FCR] >= 10 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 36 && [MaxMana] >= 70 && [MaxHP] >= 30 && ([Strength] >= 10 || [Dexterity] >= 5)
+[Type] == ring && [Quality] == crafted # [ToHit] >= 90 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 36 && [LifeLeech]+[ManaLeech] >= 11
+[Type] == ring && [Quality] == crafted # [ToHit] >= 90 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 36 && ([LifeLeech] >= 7 || [ManaLeech] >= 5) && ([Strength] >= 10 || [Dexterity] >= 5)
+[Type] == ring && [Quality] == crafted # [ToHit] >= 110 &&  ([LifeLeech] >= 7 || [ManaLeech] >= 5) && [Strength] + [Dexterity] >= 30
+[Type] == ring && [Quality] == crafted # [ToHit] >= 110 && [FCR] >= 10 && [Strength] + [Dexterity] >= 20 && [MaxHP] >= 30 || [MaxMana] >= 70
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [FireResist] >= 15 && [ColdResist] >= 15 && [Dexterity] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [FireResist] >= 15 && [ColdResist] >= 15 && [Strength] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [ColdResist] >= 15 && [LightResist] >= 15 && [Strength] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [ColdResist] >= 15 && [LightResist] >= 15 && [Dexterity] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [LightResist] >= 15 && [FireResist] >= 15 && [Strength] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [LightResist] >= 15 && [FireResist] >= 15 && [Dexterity] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [Strength] >= 15
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 20 && [Dexterity] >= 10
+[Type] == Ring && [Quality] == crafted # [Dexterity] >= 15 && [Strength] >= 10 && [MaxHP] >= 15
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 30 && [Strength] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxHP] >= 30 && [Dexterity] >= 10
+[Type] == Ring && [Quality] == crafted # [FCR] == 10 && [MaxMana] >= 70 && [Strength] >= 10
 
 //BLOOD BELTS
 [Type] == Belt && [Quality] == Crafted # [ItemOpenWounds] >= 5 && [MaxHP] >= 10 && ([FHR] >= 24 || [Strength] >= 15)

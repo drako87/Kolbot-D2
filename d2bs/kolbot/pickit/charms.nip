@@ -1,5 +1,5 @@
 // Charms VERSION for KOLBOT adapted by DRAKO87
-// Made 11/08/2019
+// Made 09/05/2019
 // Same charms.nip made to work with kolbot 19.3.3.100
 
 // ***** CHARM SECTION *****
@@ -207,7 +207,7 @@
 [Name] == SmallCharm && [Quality] == Magic # [MaxDamage] >= 3 && [ToHit] >= 10 && [FRW] == 5
 
 // POISON SCS
-[name] == smallcharm && [quality] == magic # [poisonmaxdam] == 100
+[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 100
 [name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 205 && ([maxhp] >= 20 || [frw] == 3)
 [name] == smallcharm && [quality] == magic # [poisonmaxdam] == 291 || [poisonmaxdam] == 338 || [poisonmaxdam] == 351 || [poisonmaxdam] == 385 // 313, 330, 377, 451
 //[Name] == SmallCharm && [Quality] == Magic # [Strength] == 2
