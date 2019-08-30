@@ -4,13 +4,13 @@
 
 // ***** UNIDENTIFIED UNIQUES SECTION *****
 //RINGS
-//[Type] == ring && [Quality] == Unique 
+[Type] == ring && [Quality] == Unique 
 
 //AMULETS
-//[Type] == amulet && [Quality] == Unique 
+[Type] == amulet && [Quality] == Unique 
 
 //UNIQUE JEWELS
-//[Name] == jewel && [Quality] == Unique 
+[Name] == jewel && [Quality] == Unique 
 
 //Small Charms
 [Name] == SmallCharm && [Quality] == unique
