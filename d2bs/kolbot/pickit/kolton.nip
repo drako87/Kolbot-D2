@@ -296,10 +296,10 @@
 [Type] == ring && [Quality] == unique # [ItemMaxManaPercent] == 25 // Stone of Jordan
 //[Type] == ring && [Quality] == unique # [MaxHP] == 40 // Dwarf Star
 [Type] == ring && [Quality] == unique # [ToHit] >= 230 && [Dexterity] >= 18 // Raven Frost
-[Type] == ring && [Quality] == unique # [LifeLeech] >= 3 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
+[Type] == ring && [Quality] == unique # [LifeLeech] == 5 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
 //[Type] == ring && [Quality] == unique # [LifeLeech] >= 9 // Carrion Wind
 [Type] == ring && [Quality] == unique # [PoisonResist] >= 30 && [NormalDamageReduction] >= 11 // Nature's Peace
-[Type] == ring && [Quality] == unique # [ItemAbsorbLightPercent] >= 20 // Wisp Projector
+//[Type] == ring && [Quality] == unique # [ItemAbsorbLightPercent] == 20 && [ItemMagicBonus] == 20// Wisp Projector
 
 // AMULETS
 //[Type] == amulet && [Quality] == unique # [Strength] == 12 && [ColdResist] >= 25 // Saracen's Chance
@@ -308,7 +308,7 @@
 //[Type] == amulet && [Quality] == unique # [PoisonResist] == 75 // Atma's Scarab
 //[Type] == amulet && [Quality] == unique # [HPRegen] == 10 // The Rising Sun
 //[Type] == amulet && [Quality] == unique # [LightResist] == 35 // Highlord's Wrath
-[Type] == amulet && [Quality] == unique # [Strength] == 5 && [ColdResist] >= 25 // Mara's Kaleidoscope
+[Type] == amulet && [Quality] == unique # [Strength] == 5 && [ColdResist] >= 28 // Mara's Kaleidoscope
 //[Type] == amulet && [Quality] == unique # [DefensiveAurasSkillTab] >= 2 // Seraph's Hymn
 [Type] == amulet && [Quality] == unique # [ToHit] >= 430 && [ColdResist] >= 30 // Metalgrid
 
