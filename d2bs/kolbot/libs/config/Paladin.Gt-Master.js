@@ -256,7 +256,7 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,0,0,0,0,0,0,0];
 	Config.Inventory[1] = [1,1,1,0,0,0,0,0,0,0];
 	Config.Inventory[2] = [1,1,1,0,0,0,0,0,0,0];
 	Config.Inventory[3] = [1,1,1,0,0,0,0,0,0,0];
@@ -427,7 +427,7 @@ function LoadConfig() {
 	
 	//Config.Recipes.push([Recipe.HitPower.Gloves, 336]);	    // Chain Gloves
 	//Config.Recipes.push([Recipe.HitPower.Gloves, 382]);	    // Heavy Bracers
-	Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
 	//Config.Recipes.push([Recipe.HitPower.Helm, 309]); 	// Full Helm
 	//Config.Recipes.push([Recipe.HitPower.Helm, 355]); 	// Basinet
 	//Config.Recipes.push([Recipe.HitPower.Helm, 425]); 	// Giant Conch
@@ -450,7 +450,7 @@ function LoadConfig() {
 	
 	//Config.Recipes.push([Recipe.Blood.Gloves, 335]); 		// Heavy Gloves
 	//Config.Recipes.push([Recipe.Blood.Gloves, 381]); 		// Sharkskin Gloves
-	Config.Recipes.push([Recipe.Blood.Gloves, 451]); 		// Vampirebone Gloves
+	//Config.Recipes.push([Recipe.Blood.Gloves, 451]); 		// Vampirebone Gloves
 	//Config.Recipes.push([Recipe.Blood.Helm, 308]); 		// Helm
 	//Config.Recipes.push([Recipe.Blood.Helm, 354]); 		// Casque
 	//Config.Recipes.push([Recipe.Blood.Helm, 424]); 		// Armet
@@ -528,13 +528,13 @@ function LoadConfig() {
     //Config.Runewords.push([Runeword.Insight, 154]); // Bec-de-Corbin
     //Config.Runewords.push([Runeword.Insight, 155]); // Grim Scythe
 	
-	Config.Runewords.push([Runeword.Insight, 254]); // Colossus Voulge
+	//Config.Runewords.push([Runeword.Insight, 254]); // Colossus Voulge
 	//Config.Runewords.push([Runeword.Insight, 255]); // Thresher
 	//Config.Runewords.push([Runeword.Insight, 256]); // Cryptic Axe
 	//Config.Runewords.push([Runeword.Insight, 257]); // Great Poleaxe
 	//Config.Runewords.push([Runeword.Insight, 258]); // Giant Thresher
  
-    Config.KeepRunewords.push("[type] == polearm && [Flag] == ethereal # [meditationaura] >= 17");
+    //Config.KeepRunewords.push("[type] == polearm && [Flag] == ethereal # [meditationaura] >= 17");
    
     // smoke
     //Config.Runewords.push([Runeword.Smoke, "lightplate"]);
@@ -603,14 +603,14 @@ function LoadConfig() {
     //Config.Runewords.push([Runeword.Spirit, "protectorshield"]);
     //Config.Runewords.push([Runeword.Spirit, "gildedshield"]);
     //Config.Runewords.push([Runeword.Spirit, "royalshield"]);
-    //Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
+    Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
     //Config.Runewords.push([Runeword.Spirit, "SacredTarge"]);  
     //Config.Runewords.push([Runeword.Spirit, "sacredrondache"]);
     //Config.Runewords.push([Runeword.Spirit, "kurastshield"]);
     //Config.Runewords.push([Runeword.Spirit, "zakarumshield"]);
     //Config.Runewords.push([Runeword.Spirit, "vortexshield"]);
    
-    //Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
+    Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
     
 	// Hoto
 	//Config.Runewords.push([Runeword.HeartoftheOak, 21]); // Hoto Flail

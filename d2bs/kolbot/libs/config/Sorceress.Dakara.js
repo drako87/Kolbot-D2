@@ -33,46 +33,46 @@ function LoadConfig() {
 	Scripts.Mausoleum = false;
 		Config.Mausoleum.KillBloodRaven = true;
 		Config.Mausoleum.ClearCrypt = false;
-	Scripts.Rakanishu = false;
+	Scripts.Rakanishu = true;
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = false;
 	Scripts.Coldcrow = false;
 	Scripts.Tristram = false;
 		Config.Tristram.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Pit = false;
+	Scripts.Pit = true;
 		Config.Pit.ClearPit1 = false;
 	Scripts.Treehead = false;
 	Scripts.Smith = false;
 	Scripts.BoneAsh = false;
-	Scripts.Countess = false;
+	Scripts.Countess = true;
 		Config.Countess.KillGhosts = true;
-	Scripts.Andariel = false;
+	Scripts.Andariel = true;
 	Scripts.Cows = false;
 
 	// *** act 2 ***
-	Scripts.Radament = false;
-	Scripts.Coldworm = false;
-		Config.Coldworm.KillBeetleburst = false;
+	Scripts.Radament = true;
+	Scripts.Coldworm = true;
+		Config.Coldworm.KillBeetleburst = true;
 		Config.Coldworm.ClearMaggotLair = false; // Clear all 3 levels
-	Scripts.AncientTunnels = false;
+	Scripts.AncientTunnels = true;
 		Config.AncientTunnels.OpenChest = true; // Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = true;
-	Scripts.Summoner = false;
+	Scripts.Summoner = true;
 		Config.Summoner.FireEye = true;
 	Scripts.Tombs = false;
-	Scripts.Duriel = false;
+	Scripts.Duriel = true;
 
 	// *** act 3 ***
-	Scripts.Stormtree = false;
-	Scripts.KurastTemples = false;
+	Scripts.Stormtree = true;
+	Scripts.KurastTemples = true;
 	Scripts.Icehawk = false;
 	Scripts.Endugu = false;
 	Scripts.Travincal = false;
 		Config.Travincal.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Mephisto = false;
+	Scripts.Mephisto = true;
 		Config.Mephisto.MoatTrick = false;
-		Config.Mephisto.KillCouncil = false;
+		Config.Mephisto.KillCouncil = true;
 		Config.Mephisto.TakeRedPortal = true;
 
 	// *** act 4 ***
@@ -91,13 +91,13 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** act 5 ***
-	Scripts.Pindleskin = false;
+	Scripts.Pindleskin = true;
 		Config.Pindleskin.UseWaypoint = true;
 		Config.Pindleskin.KillNihlathak = true;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false;
 		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Eldritch = false;
+	Scripts.Eldritch = true;
 		Config.Eldritch.OpenChest = true;
 		Config.Eldritch.KillShenk = true;
 		Config.Eldritch.KillDacFarren = true;
@@ -163,13 +163,13 @@ function LoadConfig() {
 		Config.OrgTorch.WaitTimeout = 15; // Time in minutes to wait for keys before moving on
 		Config.OrgTorch.UseSalvation = true; // Use Salvation aura on Mephisto (if possible)
 		Config.OrgTorch.GetFade = false; // Get fade by standing in a fire. You MUST have Last Wish or Treachery on your character being worn.
-	Scripts.Rusher = true; // Rush bot. For a list of commands, see Rusher.js
+	Scripts.Rusher = false; // Rush bot. For a list of commands, see Rusher.js
 		Config.Rusher.WaitPlayerCount = 1; // Wait until game has a certain number of players (0 - don't wait, 8 - wait for full game).
-		Config.Rusher.Radament = false; // Do Radament quest.
-		Config.Rusher.LamEsen = false; // Do Lam Esen quest.
-		Config.Rusher.Izual = false; // Do Izual quest.
+		Config.Rusher.Radament = true; // Do Radament quest.
+		Config.Rusher.LamEsen = true; // Do Lam Esen quest.
+		Config.Rusher.Izual = true; // Do Izual quest.
 		Config.Rusher.Shenk = true; // Do Shenk quest.
-		Config.Rusher.Anya = false; // Do Anya quest.
+		Config.Rusher.Anya = true; // Do Anya quest.
 		Config.Rusher.LastRun = ""; // End rush after this run. List of runs: http://pastebin.com/Uez3nZ6g
 	Scripts.Rushee = false; // Automatic rushee, works with Rusher. Set Rusher's character name as Config.Leader
 		Config.Rushee.Quester = false; // Enter portals and get quest items.
@@ -241,7 +241,7 @@ function LoadConfig() {
 	Config.UseMercRejuv = 40; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
-	Config.RejuvBuffer = 2; // Number of rejuvenation potions to keep in inventory.
+	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
 	// Chicken settings
 	Config.LifeChicken = 35; // Exit game if life is less or equal to designated percent.
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,0,0,0,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[0] = [1,1,1,0,0,0,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,0,0,0,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,0,0,0,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,0,0,0,0,0,0,0];
 
 	Config.StashGold = 300000; // Minimum amount of gold to stash.
 
@@ -363,7 +363,7 @@ function LoadConfig() {
 	//Config.Recipes.push([Recipe.Gem, "Flawless Diamond"]);  // Make Perfect Diamond
 	//Config.Recipes.push([Recipe.Gem, "Flawless Skull"]);    // Make Perfect Skull
 
-	Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
+	//Config.Recipes.push([Recipe.Token]); // Make Token of Absolution
 	
 	//Config.Recipes.push([Recipe.Rune, 610]); // El Rune -> Eld Rune
 	//Config.Recipes.push([Recipe.Rune, 611]); // Eld Rune -> Tir Rune
@@ -427,7 +427,7 @@ function LoadConfig() {
 	
 	//Config.Recipes.push([Recipe.HitPower.Gloves, 336]);	// Chain Gloves
 	//Config.Recipes.push([Recipe.HitPower.Gloves, 382]);	// Heavy Bracers
-	Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
+	//Config.Recipes.push([Recipe.HitPower.Gloves, 452]);	    // Vambraces
 	//Config.Recipes.push([Recipe.HitPower.Helm, 309]); 	// Full Helm
 	//Config.Recipes.push([Recipe.HitPower.Helm, 355]); 	// Basinet
 	//Config.Recipes.push([Recipe.HitPower.Helm, 425]); 	// Giant Conch
@@ -528,13 +528,13 @@ function LoadConfig() {
     //Config.Runewords.push([Runeword.Insight, 154]); // Bec-de-Corbin
     //Config.Runewords.push([Runeword.Insight, 155]); // Grim Scythe
 	
-	Config.Runewords.push([Runeword.Insight, 254]); // Colossus Voulge
+	//Config.Runewords.push([Runeword.Insight, 254]); // Colossus Voulge
 	//Config.Runewords.push([Runeword.Insight, 255]); // Thresher
 	//Config.Runewords.push([Runeword.Insight, 256]); // Cryptic Axe
 	//Config.Runewords.push([Runeword.Insight, 257]); // Great Poleaxe
 	//Config.Runewords.push([Runeword.Insight, 258]); // Giant Thresher
  
-    Config.KeepRunewords.push("[type] == polearm && [Flag] == ethereal # [meditationaura] >= 17");
+    //Config.KeepRunewords.push("[type] == polearm && [Flag] == ethereal # [meditationaura] >= 17");
    
     // smoke
     //Config.Runewords.push([Runeword.Smoke, "lightplate"]);
@@ -603,14 +603,14 @@ function LoadConfig() {
     //Config.Runewords.push([Runeword.Spirit, "protectorshield"]);
     //Config.Runewords.push([Runeword.Spirit, "gildedshield"]);
     //Config.Runewords.push([Runeword.Spirit, "royalshield"]);
-    //Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
+    Config.Runewords.push([Runeword.Spirit, "Monarch"]);  
     //Config.Runewords.push([Runeword.Spirit, "SacredTarge"]);  
     //Config.Runewords.push([Runeword.Spirit, "sacredrondache"]);
     //Config.Runewords.push([Runeword.Spirit, "kurastshield"]);
     //Config.Runewords.push([Runeword.Spirit, "zakarumshield"]);
     //Config.Runewords.push([Runeword.Spirit, "vortexshield"]);
    
-    //Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
+    Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] >= 35");
     
 	// Hoto
 	//Config.Runewords.push([Runeword.HeartoftheOak, 21]); // Hoto Flail
@@ -622,11 +622,11 @@ function LoadConfig() {
 	// If LocalChat is enabled, chat can be sent via 'sendCopyData' instead of BNET
 	// To allow 'say' to use BNET, use 'say("msg", true)', the 2nd parameter will force BNET
 	// LocalChat messages will only be visible on clients running on the same PC
-	Config.LocalChat.Enabled = true; // enable the LocalChat system
+	Config.LocalChat.Enabled = false; // enable the LocalChat system
 	Config.LocalChat.Toggle = false; // optional, set to KEY value to toggle through modes 0, 1, 2
 	Config.LocalChat.Mode = 0; // 0 = disabled, 1 = chat from 'say' (recommended), 2 = all chat (for manual play)
 	// If Config.Leader is set, the bot will only accept invites from leader. If Config.PublicMode is not 0, Baal and Diablo script will open Town Portals.
-	Config.PublicMode = 1; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
+	Config.PublicMode = 0; // 1 = invite and accept, 2 = accept only, 3 = invite only, 0 = disable
 	// Party message settings. Each setting represents an array of messages that will be randomly chosen.
 	// $name, $level, $class and $killer are replaced by the player's name, level, class and killer
 	Config.Greetings = ["Hello, $name (level $level $class)"]; // Example: ["Hello, $name (level $level $class)"]
@@ -636,7 +636,7 @@ function LoadConfig() {
 	Config.UnpartyShitlisted = false; // Leave party if someone invited a blacklisted player.
 
 	// General config
-	Config.AutoMap = true; // Set to true to open automap at the beginning of the game.
+	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = "Next game in 1 min: $nextgame"; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 60; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
 	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.

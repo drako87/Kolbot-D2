@@ -60,8 +60,8 @@
 //[Name] == DuskShroud && [Quality] == Unique //Ormus' Robes
 //[Name] == BalrogSkin && [Quality] == Unique //Arkaine's Valor
 //[Name] == KrakenShell && [Quality] == Unique //Leviathan
-[Name] == ShadowPlate && [Quality] == Unique //Steel Carapce
-[Name] == SacredArmor && [Quality] == Unique //Templar's Might, Tyrael's Might
+//[Name] == ShadowPlate && [Quality] == Unique //Steel Carapce
+//[Name] == SacredArmor && [Quality] == Unique //Templar's Might, Tyrael's Might
 //[Name] == MeshArmor && [Quality] == Unique //Shaftstop
 //[Name] == RussetArmor && [Quality] == Unique //Skullder's Ire
 //[Name] == SerpentskinArmor && [Quality] == Unique //Skin of the Vipermagi
@@ -201,14 +201,15 @@
 // ARMOR
 [Name] == BalrogSkin && [Quality] == Unique && [Flag] != ethereal # [ItemAllSkills] == 2   //Arkaine's Valor
 [Name] == KrakenShell && [Quality] == Unique # [DamageResist] == 25 && [Strength] >= 45 //Leviathan
-[Name] == ShadowPlate && [Quality] == Unique && [Flag] == ethereal //Steel Carapce
-[Name] == SacredArmor && [Quality] == Unique //Templar's Might, Tyrael's Might
 [Name] == MeshArmor && [Quality] == Unique # [Enhanced Defense] == 220 //Shaftstop
 [Name] == RussetArmor && [Quality] == Unique && [Flag] == ethereal //Skullder's Ire
 [Name] == SerpentskinArmor && [Quality] == Unique # [ColdResist] >= 35 && [MagicDamageReduction] >= 10 //Skin of the Vipermagi
 [Name] == DuskShroud && [Quality] == Unique # ([SkillFirebolt] >= 3 || [SkillFireball] >= 3 || [SkillMeteor] >= 3)										//ORMUS' ROBES
 [Name] == DuskShroud && [Quality] == Unique # ([SkillChainLightning] >= 3 || [SkillLightning] >= 3 || [SkillNova] >= 3 || [SkillEnergyShield] >= 3)		//ORMUS' ROBES
 [Name] == DuskShroud && [Quality] == Unique # ([SkillBlizzard] >= 3 || [SkillGlacialSpike] >= 3 || [SkillIceBlast] >= 3)								//ORMUS' ROBES
+[Name] == ShadowPlate && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190 && [ManaRecovery] >= 10 && [ColdResist] >= 40 && [NormalDamageReduction] >= 14		//STEEL CARAPACE
+[Name] == SacredArmor && [Quality] == Unique # [EnhancedDefense] >= 170 && [OffensiveAurasSkillTab] >= 2 && [ArmorClassVSMissile] >= 250 && [Strength] >= 15 && [Vitality] >= 15	//TEMPLAR'S MIGHT
+[Name] == SacredArmor && [Quality] == Unique # [EnhancedDefense] >= 120 && [Strength] >= 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80						//TYREAL'S MIGHT
 
 // SHIELDS
 //[Name] == RoundShield && [Quality] == Unique //Mosser's Blessed Circle
@@ -295,7 +296,7 @@
 //[Type] == ring && [Quality] == unique # [ManaLeech] >= 7 // Manald Heal
 [Type] == ring && [Quality] == unique # [ItemMaxManaPercent] == 25 // Stone of Jordan
 //[Type] == ring && [Quality] == unique # [MaxHP] == 40 // Dwarf Star
-[Type] == ring && [Quality] == unique # [ToHit] >= 230 && [Dexterity] >= 18 // Raven Frost
+[Type] == ring && [Quality] == unique # [ToHit] >= 218 && [Dexterity] >= 19 // Raven Frost
 [Type] == ring && [Quality] == unique # [LifeLeech] == 5 && [MaxStamina] == 50 // Bul-Kathos' Wedding Band
 //[Type] == ring && [Quality] == unique # [LifeLeech] >= 9 // Carrion Wind
 [Type] == ring && [Quality] == unique # [PoisonResist] >= 30 && [NormalDamageReduction] >= 11 // Nature's Peace

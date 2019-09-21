@@ -23,7 +23,7 @@
 // ** KEYS **
 [name] == keyofhate # # [maxquantity] == 6
 [name] == keyofterror # # [maxquantity] == 6
-//[name] == keyofdestruction # # [maxquantity] == 6
+[name] == keyofdestruction # # [maxquantity] == 6
 
 // ** ORGANS **
 [name] == diablo'shorn
